@@ -1,0 +1,3273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the lynbro-accessibility-checker 0.2.2 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: lynbro-accessibility-checker 0.2.2\n"
+"Report-Msgid-Bugs-To: https://soge.dk\n"
+"POT-Creation-Date: 2026-11-11 15:05+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: admin/ajax.php:23
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: admin/ajax.php:71 admin/ajax.php:101 admin/ajax.php:125 admin/ajax.php:145
+#: admin/dashboard.php:21 admin/export.php:25 admin/fixes-page.php:22
+#: admin/manual-page.php:20 admin/report-page.php:22 admin/settings-page.php:21
+#: admin/statement-page.php:84 includes/lynbro-core/lynbro-core.php:764
+#: includes/lynbro-core/lynbro-core.php:1534
+#: includes/lynbro-core/lynbro-core.php:1739
+#: includes/lynbro-core/lynbro-core.php:1765
+msgid "Insufficient permissions."
+msgstr ""
+
+#: admin/browser-page.php:161
+#, php-format
+msgid "Checking page %1$s of %2$s: %3$s"
+msgstr ""
+
+#: admin/browser-page.php:163
+#, php-format
+msgid "Checked so far: %1$s of %2$s."
+msgstr ""
+
+#: admin/browser-page.php:165
+#, php-format
+msgid "Finished. Pages checked in the browser: %s."
+msgstr ""
+
+#: admin/browser-page.php:167
+#, php-format
+msgid ""
+"Stopped. Pages checked in the browser: %s. Start again to carry on with the "
+"pages not checked yet."
+msgstr ""
+
+#: admin/browser-page.php:169
+#, php-format
+msgid ""
+"%1$s contrast, focus and target-size findings recorded; %2$s markup findings "
+"looked up at desktop and phone width."
+msgstr ""
+
+#: admin/browser-page.php:170
+msgid ""
+"These pages could not be checked: they did not load in time, or the results "
+"could not be saved."
+msgstr ""
+
+#: admin/browser-page.php:171
+msgid ""
+"The pages do not load inside this screen, so nothing could be checked. A "
+"security plugin or the server probably sends \"X-Frame-Options: DENY\" or a "
+"Content-Security-Policy \"frame-ancestors\" rule for the whole site. "
+"Allowing the site to frame itself (SAMEORIGIN / 'self') fixes it; until "
+"then, use \"Check in browser\" on each page of the report."
+msgstr ""
+
+#: admin/browser-page.php:172 admin/browser-page.php:251 admin/dashboard.php:52
+msgid "Stop"
+msgstr ""
+
+#: admin/browser-page.php:173 includes/live.php:169
+msgid "Open the report"
+msgstr ""
+
+#: admin/browser-page.php:174
+msgid "Open this page in the report"
+msgstr ""
+
+#: admin/browser-page.php:180 admin/menu.php:23
+msgid "Browser check"
+msgstr ""
+
+#: admin/browser-page.php:183 admin/report-page.php:82
+msgid "Check every page in the browser"
+msgstr ""
+
+#: admin/browser-page.php:185
+msgid ""
+"Contrast, a visible focus ring and the size of tap targets come from the "
+"stylesheet, so they are measured in a browser, not read from the markup. "
+"This screen opens each page of the report here, at desktop width (1280 "
+"pixels) and at phone width (390 pixels), measures it and moves on."
+msgstr ""
+
+#: admin/browser-page.php:188
+msgid ""
+"It also looks every markup finding up on the painted page. A finding on an "
+"element that is not on screen at either width when the page loads (a block "
+"the theme hides, a closed menu or pop-up) stops counting, and so does the "
+"phone copy of a block a page builder prints twice, once for desktop and once "
+"for phones. Both stay listed on the page's report with the reason."
+msgstr ""
+
+#: admin/browser-page.php:191
+msgid ""
+"It runs in this browser tab, a few seconds per page. Keep the tab open and "
+"in front until it says it has finished; a browser slows down tabs it is not "
+"showing."
+msgstr ""
+
+#: admin/browser-page.php:198
+#, php-format
+msgid "Checked in the browser so far: %1$s of %2$s scanned pages."
+msgstr ""
+
+#: admin/browser-page.php:212
+#, php-format
+msgid "Only this page: %s"
+msgstr ""
+
+#: admin/browser-page.php:216
+msgid "Check other pages"
+msgstr ""
+
+#: admin/browser-page.php:222
+msgid "Which pages"
+msgstr ""
+
+#: admin/browser-page.php:223
+msgid "Pages not checked in the browser yet"
+msgstr ""
+
+#: admin/browser-page.php:224
+msgid "Every scanned page, the ones checked longest ago first"
+msgstr ""
+
+#: admin/browser-page.php:226
+msgid "Show these pages"
+msgstr ""
+
+#: admin/browser-page.php:235
+msgid ""
+"Every scanned page has been checked in the browser. Choose \"Every scanned "
+"page\" to check them again."
+msgstr ""
+
+#: admin/browser-page.php:236
+msgid ""
+"There are no scanned pages to check. Run a scan on the Overview tab first."
+msgstr ""
+
+#: admin/browser-page.php:246
+#, php-format
+msgid "Check %s page in the browser"
+msgid_plural "Check %s pages in the browser"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/browser-page.php:262
+msgid "Desktop, 1280 pixels"
+msgstr ""
+
+#: admin/browser-page.php:266
+msgid "Phone, 390 pixels"
+msgstr ""
+
+#: admin/columns.php:45 admin/columns.php:50 admin/columns.php:202
+#: admin/dashboard.php:31 admin/menu.php:51 admin/menu.php:67
+#: includes/lynbro-core/lynbro-core.php:523
+msgid "Accessibility"
+msgstr ""
+
+#: admin/columns.php:118
+msgid "Checking…"
+msgstr ""
+
+#: admin/columns.php:120
+msgid "Not scanned yet"
+msgstr ""
+
+#: admin/columns.php:132
+msgid "Not checked"
+msgstr ""
+
+#: admin/columns.php:144
+msgid "No findings"
+msgstr ""
+
+#: admin/columns.php:152 admin/columns.php:242
+#, php-format
+msgid "%s failure"
+msgid_plural "%s failures"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/columns.php:156
+#, php-format
+msgid "%s likely"
+msgid_plural "%s likely"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/columns.php:219
+msgid "This page is checked when it is published."
+msgstr ""
+
+#: admin/columns.php:226
+msgid ""
+"Being checked after your last save. Reload in a moment to see the result."
+msgstr ""
+
+#: admin/columns.php:230
+msgid "Not checked yet."
+msgstr ""
+
+#: admin/columns.php:236
+msgid "The last check could not read this page."
+msgstr ""
+
+#: admin/columns.php:247
+#, php-format
+msgid "%s likely failure"
+msgid_plural "%s likely failures"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/columns.php:252
+#, php-format
+msgid "%s for a person to look at"
+msgid_plural "%s for a person to look at"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/columns.php:262 admin/report-page.php:190
+#, php-format
+msgid "Last checked %s."
+msgstr ""
+
+#: admin/columns.php:270
+msgid "Open the report for this page"
+msgstr ""
+
+#: admin/dashboard.php:35
+msgid ""
+"PHP on this server does not have the DOM extension, so pages cannot be "
+"parsed. Ask your host to enable ext-dom — it is part of a standard PHP build."
+msgstr ""
+
+#: admin/dashboard.php:40
+msgid "Scan"
+msgstr ""
+
+#: admin/dashboard.php:42
+msgid ""
+"Every published page, checked against WCAG 2.2 AA. There is no page limit "
+"and never will be — a scan that stops at twenty pages is a scan that hides "
+"the other four hundred."
+msgstr ""
+
+#: admin/dashboard.php:49 admin/statement-page.php:213
+msgid "Scan the site"
+msgstr ""
+
+#: admin/dashboard.php:61
+msgid "Scan progress"
+msgstr ""
+
+#: admin/dashboard.php:70 admin/menu.php:164
+#, php-format
+msgid "Scanned %1$s of %2$s pages."
+msgstr ""
+
+#: admin/dashboard.php:77
+#, php-format
+msgid "%s page has been scanned."
+msgid_plural "%s pages have been scanned."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/dashboard.php:81
+msgid "Nothing has been scanned yet."
+msgstr ""
+
+#: admin/dashboard.php:93
+msgid "What the scan found"
+msgstr ""
+
+#: admin/dashboard.php:97 admin/report-page.php:92
+msgid "Failures"
+msgstr ""
+
+#: admin/dashboard.php:98
+msgid "Provable from the markup"
+msgstr ""
+
+#: admin/dashboard.php:102
+msgid "Likely failures"
+msgstr ""
+
+#: admin/dashboard.php:103
+msgid "Worth your eyes on"
+msgstr ""
+
+#: admin/dashboard.php:107
+msgid "Need a person"
+msgstr ""
+
+#: admin/dashboard.php:108
+msgid "A machine cannot settle these"
+msgstr ""
+
+#: admin/dashboard.php:112
+msgid "Pages with no findings"
+msgstr ""
+
+#: admin/dashboard.php:117
+#, php-format
+msgid "of %s scanned"
+msgstr ""
+
+#: admin/dashboard.php:130
+#, php-format
+msgid "%s page could not be checked, so it is not counted above."
+msgid_plural "%s pages could not be checked, so they are not counted above."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/dashboard.php:134
+msgid "See why in the report"
+msgstr ""
+
+#: admin/dashboard.php:139
+msgid ""
+"There is no percentage here on purpose. No automated scan can tell you a "
+"site is accessible — automation reaches about a third of WCAG, and anyone "
+"selling you a compliance score is selling you the thing American regulators "
+"have started fining people for. The counts are the counts; the rest is on "
+"the Manual checks tab."
+msgstr ""
+
+#: admin/dashboard.php:145
+msgid "Start here"
+msgstr ""
+
+#: admin/dashboard.php:146
+msgid ""
+"The same fault repeated across many pages is usually one line in a theme "
+"template. These are ordered by how much they cost you."
+msgstr ""
+
+#: admin/dashboard.php:149
+msgid "Issues grouped by rule, worst first"
+msgstr ""
+
+#: admin/dashboard.php:152 admin/export.php:71
+msgid "Problem"
+msgstr ""
+
+#: admin/dashboard.php:153 admin/export.php:68
+msgid "Severity"
+msgstr ""
+
+#: admin/dashboard.php:154 admin/export.php:69
+msgid "WCAG"
+msgstr ""
+
+#: admin/dashboard.php:155
+msgid "Times"
+msgstr ""
+
+#: admin/dashboard.php:156 admin/report-page.php:63
+msgid "Pages"
+msgstr ""
+
+#: admin/dashboard.php:174 admin/report-page.php:374
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: admin/dashboard.php:191
+msgid "What the scan cannot see"
+msgstr ""
+
+#: admin/dashboard.php:196
+#, php-format
+msgid ""
+"Eighteen things need a person to look at them. You have answered %1$s of "
+"%2$s."
+msgstr ""
+
+#: admin/dashboard.php:204
+msgid "Go through the manual checks"
+msgstr ""
+
+#: admin/dashboard.php:210
+msgid "The European Accessibility Act, honestly"
+msgstr ""
+
+#: admin/dashboard.php:212
+msgid ""
+"The Act has applied since 28 June 2025. In Denmark, Erhvervsstyrelsen "
+"supervises it. But microenterprises — under 10 people and turnover at or "
+"below 2 million euro — are exempt for services, so a great many small sites "
+"are not obliged to do any of this."
+msgstr ""
+
+#: admin/dashboard.php:215
+msgid ""
+"We would rather tell you that than sell you a scan you did not need. If you "
+"are over that line, the report and the manual checks are what an assessment "
+"looks like; if you are under it, everything here still makes your site work "
+"for more people, which was always the better reason."
+msgstr ""
+
+#: admin/export.php:45
+msgid ""
+"Automated testing covers roughly a third of WCAG. The manual checks recorded "
+"alongside this report are the rest."
+msgstr ""
+
+#: admin/export.php:66 admin/report-page.php:91 admin/report-page.php:300
+msgid "Page"
+msgstr ""
+
+#: admin/export.php:67
+msgid "Address"
+msgstr ""
+
+#: admin/export.php:70
+msgid "Level"
+msgstr ""
+
+#: admin/export.php:72 admin/report-page.php:302
+msgid "Detail"
+msgstr ""
+
+#: admin/export.php:73 admin/report-page.php:301
+msgid "Element"
+msgstr ""
+
+#: admin/export.php:74
+msgid "Markup"
+msgstr ""
+
+#: admin/export.php:75 admin/report-page.php:274
+msgid "How to fix it"
+msgstr ""
+
+#: admin/export.php:76
+msgid "First seen"
+msgstr ""
+
+#: admin/fixes-page.php:37 admin/menu.php:24
+msgid "Fixes"
+msgstr ""
+
+#: admin/fixes-page.php:41
+msgid "What these do"
+msgstr ""
+
+#: admin/fixes-page.php:43
+msgid ""
+"Every fix here is off until you switch it on, and switching it off puts "
+"things back exactly as they were. Nothing edits your posts, your theme or "
+"your database — the changes happen as the page is built and stop the moment "
+"you say so."
+msgstr ""
+
+#: admin/fixes-page.php:46
+msgid ""
+"This is not an accessibility overlay. There is no widget, no toolbar and no "
+"script sent to your visitors that claims to make the site compliant. These "
+"are ordinary corrections to your own markup, and each one only addresses the "
+"specific fault named next to it."
+msgstr ""
+
+#: admin/fixes-page.php:54
+msgid "Available fixes"
+msgstr ""
+
+#: admin/fixes-page.php:85
+#, php-format
+msgid "Your last scan found %s of these."
+msgid_plural "Your last scan found %s of these."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/fixes-page.php:91
+msgid ""
+"Your last scan found none of these, so this fix has nothing to do right now."
+msgstr ""
+
+#: admin/fixes-page.php:98
+msgid "Id of your content area"
+msgstr ""
+
+#: admin/fixes-page.php:106
+msgid ""
+"Without the # — most themes use \"main\" or \"content\". The skip link needs "
+"this to point at something; if it points at nothing, it is worse than not "
+"having one."
+msgstr ""
+
+#: admin/fixes-page.php:113
+msgid "Outline colour"
+msgstr ""
+
+#: admin/fixes-page.php:120
+msgid ""
+"Pick something that stands out against your background. An outline nobody "
+"can see is the problem, not the fix."
+msgstr ""
+
+#: admin/fixes-page.php:128
+msgid "Save fixes"
+msgstr ""
+
+#: admin/fixes-page.php:134
+msgid "What we will not do for you"
+msgstr ""
+
+#: admin/fixes-page.php:136
+msgid ""
+"Heading levels are not on this list, and that is deliberate. Changing an h4 "
+"to an h3 means deciding what the author meant by it, and a plugin that "
+"quietly renumbers your headings has made a decision it cannot explain to you "
+"afterwards. The same goes for writing alt text nobody wrote, and for "
+"guessing at link text. The scan tells you where those are; you make the call."
+msgstr ""
+
+#: admin/manual-page.php:34 admin/menu.php:25
+msgid "Manual checks"
+msgstr ""
+
+#: admin/manual-page.php:38
+msgid "The half a scanner cannot do"
+msgstr ""
+
+#: admin/manual-page.php:40
+msgid ""
+"Automated testing reaches roughly a third of WCAG. Everything below needs "
+"somebody to open the site and look — which is exactly what a tool selling "
+"you a compliance badge is not telling you."
+msgstr ""
+
+#: admin/manual-page.php:46
+#, php-format
+msgid "Answered %1$s of %2$s. Problems recorded: %3$s."
+msgstr ""
+
+#: admin/manual-page.php:69 admin/report-page.php:402
+#, php-format
+msgid "WCAG %1$s (%2$s)"
+msgstr ""
+
+#: admin/manual-page.php:94
+msgid "What you found"
+msgstr ""
+
+#: admin/manual-page.php:107
+#, php-format
+msgid "Answered %1$s by %2$s."
+msgstr ""
+
+#: admin/manual-page.php:109
+msgid "someone since removed"
+msgstr ""
+
+#: admin/manual-page.php:119
+msgid "Save answers"
+msgstr ""
+
+#: admin/menu.php:21
+msgid "Overview"
+msgstr ""
+
+#: admin/menu.php:22 admin/report-page.php:60 admin/report-page.php:157
+#: admin/report-page.php:245 lynbro-accessibility-checker.php:167
+msgid "Report"
+msgstr ""
+
+#: admin/menu.php:26
+msgid "Statement"
+msgstr ""
+
+#: admin/menu.php:27 admin/settings-page.php:66
+msgid "Settings"
+msgstr ""
+
+#: admin/menu.php:86
+msgid "Accessibility sections"
+msgstr ""
+
+#: admin/menu.php:159
+msgid "Starting…"
+msgstr ""
+
+#: admin/menu.php:160
+msgid "Stopped."
+msgstr ""
+
+#: admin/menu.php:161
+msgid "Finished. Reload to see the report."
+msgstr ""
+
+#: admin/menu.php:162
+msgid "The scan could not continue. Reload the page to see where it got to."
+msgstr ""
+
+#: admin/menu.php:188
+msgid "Saved."
+msgstr ""
+
+#: admin/report-page.php:66
+msgid "Nothing has been scanned yet. Start a scan on the Overview tab."
+msgstr ""
+
+#: admin/report-page.php:69
+msgid ""
+"Open a page to see every problem on it, with the element that causes it. "
+"\"Check in browser\" opens the page with the contrast, focus and target-size "
+"measurements running."
+msgstr ""
+
+#: admin/report-page.php:77
+#, php-format
+msgid ""
+"Contrast, focus and target size have been measured on %1$s of %2$s pages."
+msgstr ""
+
+#: admin/report-page.php:86 admin/report-page.php:88
+msgid "Scanned pages, worst first"
+msgstr ""
+
+#: admin/report-page.php:93
+msgid "Likely"
+msgstr ""
+
+#: admin/report-page.php:94
+msgid "To review"
+msgstr ""
+
+#: admin/report-page.php:95
+msgid "Last scanned"
+msgstr ""
+
+#: admin/report-page.php:96
+msgid "Actions"
+msgstr ""
+
+#: admin/report-page.php:119
+msgid "never"
+msgstr ""
+
+#: admin/report-page.php:125
+msgid "Check in browser"
+msgstr ""
+
+#: admin/report-page.php:126 admin/report-page.php:173
+#: admin/report-page.php:209 includes/fixes.php:385
+msgid "(opens in a new window)"
+msgstr ""
+
+#: admin/report-page.php:151
+msgid "That page is not in the report."
+msgstr ""
+
+#: admin/report-page.php:161 admin/report-page.php:249
+msgid "← All pages"
+msgstr ""
+
+#: admin/report-page.php:172
+msgid "Open this page"
+msgstr ""
+
+#: admin/report-page.php:182
+msgid ""
+"The page has been checked again. What you see below is what is on it now."
+msgstr ""
+
+#: admin/report-page.php:202
+msgid "Check this page again"
+msgstr ""
+
+#: admin/report-page.php:205
+msgid "Check in the browser, at desktop and phone width"
+msgstr ""
+
+#: admin/report-page.php:208
+msgid "Open the page with the check running"
+msgstr ""
+
+#: admin/report-page.php:215
+msgid ""
+"Contrast, focus visibility and target size are not in this page's markup — "
+"they are the result of its stylesheet. Nothing below covers them until you "
+"run the browser check."
+msgstr ""
+
+#: admin/report-page.php:220
+msgid ""
+"Nothing was found in the markup of this page. That is not the same as \"this "
+"page is accessible\" — see the Manual checks tab."
+msgstr ""
+
+#: admin/report-page.php:262
+#, php-format
+msgid "WCAG 2.2 success criterion %1$s, level %2$s"
+msgstr ""
+
+#: admin/report-page.php:271
+msgid "Why this matters"
+msgstr ""
+
+#: admin/report-page.php:284
+msgid ""
+"This rule is hidden on every page: it is still checked, but not reported or "
+"counted."
+msgstr ""
+
+#: admin/report-page.php:285
+msgid "Report this rule again"
+msgstr ""
+
+#: admin/report-page.php:287
+msgid "Hide this rule on every page"
+msgstr ""
+
+#: admin/report-page.php:292
+msgid "This one is not on your site right now."
+msgstr ""
+
+#: admin/report-page.php:294
+msgid "Where it is"
+msgstr ""
+
+#: admin/report-page.php:295 admin/report-page.php:297
+msgid "Every place this rule fires"
+msgstr ""
+
+#: admin/report-page.php:325 admin/report-page.php:523
+msgid "Previous"
+msgstr ""
+
+#: admin/report-page.php:330 admin/report-page.php:541
+msgid "Next"
+msgstr ""
+
+#: admin/report-page.php:381
+#, php-format
+msgid "%s more listed, not counted"
+msgstr ""
+
+#: admin/report-page.php:417
+msgid "Where:"
+msgstr ""
+
+#: admin/report-page.php:429
+msgid ""
+"Not counted: the browser check found this element off screen when the page "
+"loads, at desktop width and at phone width, so browsers leave it out of what "
+"a screen reader gets. If it is a menu, tab or pop-up that opens, check it "
+"while it is open."
+msgstr ""
+
+#: admin/report-page.php:431
+msgid ""
+"Not counted: this is the phone copy of a block the page also prints for "
+"desktop, with the same problem. The desktop copy is counted; fixing the "
+"block fixes both."
+msgstr ""
+
+#: admin/report-page.php:446
+msgid "Show this again on every page"
+msgstr ""
+
+#: admin/report-page.php:446
+msgid "Show this again"
+msgstr ""
+
+#: admin/report-page.php:451
+msgid "Not a problem? Hide it"
+msgstr ""
+
+#: admin/report-page.php:458
+msgid "Why (optional, kept with the decision)"
+msgstr ""
+
+#: admin/report-page.php:462
+msgid "Hide on this page"
+msgstr ""
+
+#: admin/report-page.php:464
+msgid "Hide this element on every page"
+msgstr ""
+
+#: admin/report-page.php:492
+#, php-format
+msgid "Hidden on every page by %1$s on %2$s."
+msgstr ""
+
+#: admin/report-page.php:494
+#, php-format
+msgid "Hidden by %1$s on %2$s."
+msgstr ""
+
+#: admin/report-page.php:496
+msgid "Hidden on every page."
+msgstr ""
+
+#: admin/report-page.php:496
+msgid "Hidden."
+msgstr ""
+
+#: admin/report-page.php:501
+#, php-format
+msgid "%1$s Reason: %2$s"
+msgstr ""
+
+#: admin/report-page.php:531
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: admin/settings-page.php:73
+msgid "What gets scanned"
+msgstr ""
+
+#: admin/settings-page.php:78
+msgid "Post types"
+msgstr ""
+
+#: admin/settings-page.php:83
+msgid ""
+"One per line. Leave empty to scan every public post type, which is what most "
+"sites want."
+msgstr ""
+
+#: admin/settings-page.php:88
+msgid "Also include"
+msgstr ""
+
+#: admin/settings-page.php:91
+msgid "Other pages to include in the scan"
+msgstr ""
+
+#: admin/settings-page.php:94
+msgid "The front page"
+msgstr ""
+
+#: admin/settings-page.php:98
+msgid "Category and tag pages"
+msgstr ""
+
+#: admin/settings-page.php:102
+msgid "Post type archives"
+msgstr ""
+
+#: admin/settings-page.php:109
+msgid "Extra addresses"
+msgstr ""
+
+#: admin/settings-page.php:113
+msgid ""
+"One full address per line, for pages WordPress does not list — a shop "
+"checkout, say."
+msgstr ""
+
+#: admin/settings-page.php:118
+msgid "Leave out"
+msgstr ""
+
+#: admin/settings-page.php:122
+msgid ""
+"One per line. Plain text matched anywhere in the address; * is allowed. No "
+"regular expressions — a mistyped one would silently empty the whole scan."
+msgstr ""
+
+#: admin/settings-page.php:127
+msgid "Rules to stop reporting"
+msgstr ""
+
+#: admin/settings-page.php:132
+msgid ""
+"One rule id per line. The scan still looks for them — this only hides them "
+"from the report, so putting one back shows the issues that were there all "
+"along without a rescan."
+msgstr ""
+
+#: admin/settings-page.php:135
+msgid "The rule ids"
+msgstr ""
+
+#: admin/settings-page.php:149
+msgid "How hard the scan works"
+msgstr ""
+
+#: admin/settings-page.php:150
+msgid ""
+"These control how much your server does at a time, never how much of the "
+"site is scanned. A scan always covers everything; these only decide how long "
+"it takes."
+msgstr ""
+
+#: admin/settings-page.php:154
+msgid "Pages per tick"
+msgstr ""
+
+#: admin/settings-page.php:157
+msgid "Lower on a small shared host, higher on a server that can take it."
+msgstr ""
+
+#: admin/settings-page.php:161
+msgid "Seconds per tick"
+msgstr ""
+
+#: admin/settings-page.php:167
+msgid "Seconds to wait for a page"
+msgstr ""
+
+#: admin/settings-page.php:173
+msgid "Pause at this much memory"
+msgstr ""
+
+#: admin/settings-page.php:177
+msgid ""
+"Of the PHP memory limit. The scan pauses and carries on next tick rather "
+"than dying halfway."
+msgstr ""
+
+#: admin/settings-page.php:181
+msgid "Scan on a schedule"
+msgstr ""
+
+#: admin/settings-page.php:184
+msgid "Only when I ask"
+msgstr ""
+
+#: admin/settings-page.php:185
+msgid "Every day"
+msgstr ""
+
+#: admin/settings-page.php:186
+msgid "Every week"
+msgstr ""
+
+#: admin/settings-page.php:191
+msgid "Check pages when saved"
+msgstr ""
+
+#: admin/settings-page.php:195
+msgid "Check a published page again a few seconds after it is saved"
+msgstr ""
+
+#: admin/settings-page.php:197
+msgid ""
+"Runs in the background, so saving is not slower. The result shows in the "
+"Accessibility column of the page list and in the report."
+msgstr ""
+
+#: admin/settings-page.php:205
+msgid "A site behind a password"
+msgstr ""
+
+#: admin/settings-page.php:207
+msgid ""
+"For a staging site behind basic auth (the browser’s own username and "
+"password box). The scanner sends them only to this site’s own address, never "
+"to another host. Leave empty on a public site."
+msgstr ""
+
+#: admin/settings-page.php:212
+msgid "Username"
+msgstr ""
+
+#: admin/settings-page.php:216
+msgid "Password"
+msgstr ""
+
+#: admin/settings-page.php:222
+msgid "A password is saved. Leave the field empty to keep it."
+msgstr ""
+
+#: admin/settings-page.php:224
+msgid "Stored in your database and sent with each scan request to this site."
+msgstr ""
+
+#: admin/settings-page.php:231
+msgid "Forget the username and password"
+msgstr ""
+
+#: admin/settings-page.php:239
+msgid ""
+"Maintenance mode is different: it answers every visitor with HTTP 503, and "
+"the scan cannot get past it. Switch it off while you scan, or let requests "
+"with the X-Lynbro-Accessibility header through it if your maintenance plugin "
+"allows that."
+msgstr ""
+
+#: admin/settings-page.php:244
+msgid "Save settings"
+msgstr ""
+
+#: admin/settings-page.php:249
+msgid "Your data"
+msgstr ""
+
+#: admin/settings-page.php:251
+msgid ""
+"Everything this plugin knows is in your own database, and nothing is sent "
+"anywhere. The export is the whole report as a file you can keep, hand to a "
+"supplier, or send to an assessor."
+msgstr ""
+
+#: admin/settings-page.php:255
+msgid "Export the report (CSV)"
+msgstr ""
+
+#: admin/settings-page.php:258
+msgid "Export the report (JSON)"
+msgstr ""
+
+#: admin/settings-page.php:262
+msgid "Delete every scan result? The settings are kept."
+msgstr ""
+
+#: admin/settings-page.php:265
+msgid "Delete all scan results"
+msgstr ""
+
+#: admin/statement-page.php:55
+msgid "That email address does not look right, so it was not saved."
+msgstr ""
+
+#: admin/statement-page.php:63
+msgid ""
+"Add an email address or a phone number first. A statement has to tell people "
+"how to report a barrier."
+msgstr ""
+
+#: admin/statement-page.php:105 includes/statement.php:518
+msgid "Accessibility statement"
+msgstr ""
+
+#: admin/statement-page.php:116
+msgid ""
+"The statement page has been updated. The previous text is kept in the page’s "
+"revisions."
+msgstr ""
+
+#: admin/statement-page.php:118
+msgid ""
+"The statement has been written to a draft page. Read it, change what you "
+"want, publish it and link to it from your footer."
+msgstr ""
+
+#: admin/statement-page.php:121
+msgid "Edit the statement page"
+msgstr ""
+
+#: admin/statement-page.php:126
+msgid ""
+"The suggested wording is now in the Enforcement procedure field and saved. "
+"Check that it fits your business before you write the page."
+msgstr ""
+
+#: admin/statement-page.php:133
+msgid "A statement people can find"
+msgstr ""
+
+#: admin/statement-page.php:135
+msgid ""
+"The European Accessibility Act expects a website that sells to consumers to "
+"publish an accessibility statement: how accessible the site is, what is not "
+"accessible yet, and how to report a barrier. This screen writes a first "
+"version from your scan results and manual checks. You read it, change what "
+"you want and publish it."
+msgstr ""
+
+#: admin/statement-page.php:138
+msgid ""
+"This is a writing aid, not legal advice. It does not decide whether the "
+"rules apply to you or what your statement must contain where you are, and it "
+"does not certify the site. The statement is published under your name, so "
+"read it and correct it before you publish it."
+msgstr ""
+
+#: admin/statement-page.php:145
+#, php-format
+msgid "Statement page: %1$s (%2$s), last written %3$s."
+msgstr ""
+
+#: admin/statement-page.php:151
+msgid "There is no statement page yet."
+msgstr ""
+
+#: admin/statement-page.php:160 admin/statement-page.php:300
+msgid "Save"
+msgstr ""
+
+#: admin/statement-page.php:163
+msgid "Who people contact"
+msgstr ""
+
+#: admin/statement-page.php:167
+msgid "Organisation name"
+msgstr ""
+
+#: admin/statement-page.php:171
+msgid "Email address"
+msgstr ""
+
+#: admin/statement-page.php:177
+msgid "Phone number"
+msgstr ""
+
+#: admin/statement-page.php:180
+msgid ""
+"At least one of the two. Both are printed on the public page, so use an "
+"address and a number meant for customers."
+msgstr ""
+
+#: admin/statement-page.php:184
+msgid "How soon you reply"
+msgstr ""
+
+#: admin/statement-page.php:187
+msgid ""
+"Optional, in your site’s language, for example “within five working days”. "
+"Printed as “We aim to reply …”."
+msgstr ""
+
+#: admin/statement-page.php:195
+msgid "How accessible the site is"
+msgstr ""
+
+#: admin/statement-page.php:201
+#, php-format
+msgid ""
+"From your checks: %1$s pages scanned (last on %2$s), %3$s failures and %4$s "
+"likely failures, %5$s of %6$s manual checks answered."
+msgstr ""
+
+#: admin/statement-page.php:212
+#, php-format
+msgid ""
+"The site has not been scanned yet, so the statement has no findings to list. "
+"%s first for a statement that says something."
+msgstr ""
+
+#: admin/statement-page.php:221 admin/statement-page.php:224
+#: includes/statement.php:352
+msgid "Compliance status"
+msgstr ""
+
+#: admin/statement-page.php:233
+msgid ""
+"Your choice, not the plugin’s. Automated testing reaches about a third of "
+"WCAG, so “fully meets” needs the manual checks too."
+msgstr ""
+
+#: admin/statement-page.php:237
+msgid ""
+"Your checks still show problems, so a statement that says the site fully "
+"meets WCAG 2.2 AA would not be accurate."
+msgstr ""
+
+#: admin/statement-page.php:243 includes/statement.php:403
+msgid "Known problems"
+msgstr ""
+
+#: admin/statement-page.php:247
+msgid ""
+"List the failures and likely failures from the scan, the manual checks "
+"answered as a problem, and linked documents"
+msgstr ""
+
+#: admin/statement-page.php:252
+msgid "Other known problems"
+msgstr ""
+
+#: admin/statement-page.php:255
+msgid ""
+"One per line, in plain words, with when you expect to fix it if you know."
+msgstr ""
+
+#: admin/statement-page.php:259 includes/statement.php:407
+msgid "Disproportionate burden"
+msgstr ""
+
+#: admin/statement-page.php:262
+msgid ""
+"Optional. Anything you will not make accessible because the cost would be "
+"out of proportion, and why. Leave empty if there is nothing."
+msgstr ""
+
+#: admin/statement-page.php:266
+msgid "Outside the scope"
+msgstr ""
+
+#: admin/statement-page.php:269
+msgid ""
+"Optional. For example content from other companies that you do not control, "
+"such as an embedded map or a booking widget."
+msgstr ""
+
+#: admin/statement-page.php:273 includes/statement.php:482
+msgid "Enforcement procedure"
+msgstr ""
+
+#: admin/statement-page.php:276
+msgid ""
+"Optional. Where people can turn if they are not satisfied with your answer: "
+"the authority that supervises accessibility in your country, with its "
+"contact details. One paragraph per line; web addresses and email addresses "
+"become links."
+msgstr ""
+
+#: admin/statement-page.php:282
+#, php-format
+msgid "Use the wording for %s"
+msgstr ""
+
+#: admin/statement-page.php:288
+msgid ""
+"Checked against the Danish authorities’ own pages in November 2026. It "
+"replaces what is in the field. Danish public bodies are under a different "
+"law and publish their statement through Digitaliseringsstyrelsen’s own "
+"solution (was.digst.dk), not with this page."
+msgstr ""
+
+#: admin/statement-page.php:298
+msgid "Save and update the statement page"
+msgstr ""
+
+#: admin/statement-page.php:298
+msgid "Save and write the statement page"
+msgstr ""
+
+#: admin/statement-page.php:305
+msgid "Preview"
+msgstr ""
+
+#: admin/statement-page.php:306
+msgid ""
+"This is the text the button writes, in your site’s language, from what is "
+"saved above and the checks as they are now."
+msgstr ""
+
+#: includes/checks.php:137
+msgid "No lang attribute on the html element."
+msgstr ""
+
+#: includes/checks.php:138
+#, php-format
+msgid "lang=\"%s\" is not a language tag."
+msgstr ""
+
+#: includes/checks.php:145
+msgid "The viewport says user-scalable=no."
+msgstr ""
+
+#: includes/checks.php:152
+#, php-format
+msgid "The viewport caps zoom at %s."
+msgstr ""
+
+#: includes/checks.php:225
+#, php-format
+msgid "An h%d with no text."
+msgstr ""
+
+#: includes/checks.php:239
+#, php-format
+msgid "h%1$d is followed by h%2$d."
+msgstr ""
+
+#: includes/checks.php:257
+#, php-format
+msgid "%d first-level heading on this page."
+msgid_plural "%d first-level headings on this page."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/checks.php:291
+msgid "The image is the only content of the link, and has no alt attribute."
+msgstr ""
+
+#: includes/checks.php:302
+msgid "The image is the only content of the link, and its alt text is empty."
+msgstr ""
+
+#: includes/checks.php:311
+#, php-format
+msgid "The alt text is \"%s\"."
+msgstr ""
+
+#: includes/checks.php:321
+#, php-format
+msgid "The alt text is %d characters long."
+msgstr ""
+
+#: includes/checks.php:470
+#, php-format
+msgid "Image: %s"
+msgstr ""
+
+#: includes/checks.php:507 includes/checks.php:531
+#, php-format
+msgid "The link points at %s."
+msgstr ""
+
+#: includes/checks.php:516 includes/checks.php:522 includes/checks.php:536
+#, php-format
+msgid "The link reads \"%s\"."
+msgstr ""
+
+#: includes/checks.php:640
+#, php-format
+msgid "The only hint is the placeholder \"%s\"."
+msgstr ""
+
+#: includes/checks.php:656
+#, php-format
+msgid "This field asks for something autocomplete=\"%s\" would fill in."
+msgstr ""
+
+#: includes/checks.php:669
+#, php-format
+msgid "The label points at id \"%s\", which is not on the page."
+msgstr ""
+
+#: includes/checks.php:681
+#, php-format
+msgid "id=\"%1$s\" is on %2$d elements."
+msgstr ""
+
+#: includes/checks.php:702
+#, php-format
+msgid "Field name=\"%s\"."
+msgstr ""
+
+#: includes/checks.php:705
+#, php-format
+msgid "An input of type \"%s\"."
+msgstr ""
+
+#: includes/checks.php:788
+#, php-format
+msgid "A table with %d rows and no th cells."
+msgstr ""
+
+#: includes/checks.php:847
+#, php-format
+msgid "%d audio player on this page."
+msgid_plural "%d audio players on this page."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/checks.php:874
+#, php-format
+msgid "The frame loads from %s."
+msgstr ""
+
+#: includes/checks.php:910
+#, php-format
+msgid "%1$s points at \"%2$s\", which is not on the page."
+msgstr ""
+
+#: includes/checks.php:935
+#, php-format
+msgid "A <%s> inside aria-hidden=\"true\" can still be tabbed to."
+msgstr ""
+
+#: includes/checks.php:948
+#, php-format
+msgid "role=\"%s\" is not an ARIA role."
+msgstr ""
+
+#: includes/checks.php:961
+#, php-format
+msgid "tabindex=\"%s\"."
+msgstr ""
+
+#: includes/checks.php:1010
+#, php-format
+msgid "A <%s> element."
+msgstr ""
+
+#: includes/checks.php:1048
+#, php-format
+msgid "Contrast is %1$s:1 where %2$s:1 is needed (%3$s on %4$s)."
+msgstr ""
+
+#: includes/fixes.php:36
+msgid "Fill in missing alt text from the Media Library"
+msgstr ""
+
+#: includes/fixes.php:37
+msgid ""
+"When an image in your content has no alt attribute but the same file has alt "
+"text saved in the Media Library, that text is used."
+msgstr ""
+
+#: includes/fixes.php:38
+msgid ""
+"It never invents alt text. An image with nothing saved in the library is "
+"left alone and stays in the report."
+msgstr ""
+
+#: includes/fixes.php:42
+msgid "Add a skip link"
+msgstr ""
+
+#: includes/fixes.php:43
+msgid ""
+"Puts a \"Skip to content\" link at the very start of the page. It is "
+"invisible until it is focused, exactly as WordPress does it in the admin."
+msgstr ""
+
+#: includes/fixes.php:44
+msgid ""
+"It needs something to skip to. Set the id of your content area below — most "
+"themes use \"main\" or \"content\"."
+msgstr ""
+
+#: includes/fixes.php:48
+msgid "Show where the keyboard is"
+msgstr ""
+
+#: includes/fixes.php:49
+msgid ""
+"Draws a visible outline around whatever has keyboard focus, for themes that "
+"remove the browser default."
+msgstr ""
+
+#: includes/fixes.php:50
+msgid ""
+"Uses :focus-visible, so the outline appears for keyboard users and not on "
+"every mouse click."
+msgstr ""
+
+#: includes/fixes.php:54
+msgid "Underline links inside your text"
+msgstr ""
+
+#: includes/fixes.php:55
+msgid ""
+"Underlines links in post and page content, so colour is not the only thing "
+"marking them."
+msgstr ""
+
+#: includes/fixes.php:56
+msgid ""
+"Only links inside the content area. Menus, buttons and image links are left "
+"alone."
+msgstr ""
+
+#: includes/fixes.php:60
+msgid "Say when a link opens a new window"
+msgstr ""
+
+#: includes/fixes.php:61
+msgid ""
+"Adds \"(opens in a new window)\" to links in your content that open a new "
+"tab. Screen readers announce it; nothing changes on screen."
+msgstr ""
+
+#: includes/fixes.php:62
+msgid "A link that already says so in its text is left alone."
+msgstr ""
+
+#: includes/fixes.php:66
+msgid "Name embedded frames"
+msgstr ""
+
+#: includes/fixes.php:67
+msgid ""
+"Gives an untitled embed in your content a title naming what it is — "
+"\"YouTube video\", \"Google Maps map\" and so on."
+msgstr ""
+
+#: includes/fixes.php:68
+msgid ""
+"A generic name is better than none, and worse than one you write yourself. "
+"Frames it does not recognise keep no title and stay in the report."
+msgstr ""
+
+#: includes/fixes.php:72
+msgid "Label the WordPress search and comment fields"
+msgstr ""
+
+#: includes/fixes.php:73
+msgid ""
+"Adds proper labels to the search field and the comment form fields when your "
+"theme ships them without."
+msgstr ""
+
+#: includes/fixes.php:74
+msgid ""
+"Only touches the forms WordPress itself renders. Fields from a form plugin "
+"are that plugin's to fix."
+msgstr ""
+
+#: includes/fixes.php:78
+msgid "Set the page language when the theme forgets"
+msgstr ""
+
+#: includes/fixes.php:79
+msgid ""
+"Adds the site language and text direction to the html element if they are "
+"missing."
+msgstr ""
+
+#: includes/fixes.php:80
+msgid ""
+"Runs in the browser, because by the time WordPress knows the theme skipped "
+"it the tag has already been sent."
+msgstr ""
+
+#: includes/fixes.php:84
+msgid "Let people zoom on a phone"
+msgstr ""
+
+#: includes/fixes.php:85
+msgid ""
+"Removes user-scalable=no and any maximum-scale below 2 from the viewport tag."
+msgstr ""
+
+#: includes/fixes.php:86
+msgid ""
+"Some themes set this on purpose to stop a layout shifting. If yours does, "
+"check the layout after switching this on."
+msgstr ""
+
+#: includes/fixes.php:90
+msgid "Undo forced tab order"
+msgstr ""
+
+#: includes/fixes.php:91
+msgid ""
+"Turns tabindex=\"1\" and higher into tabindex=\"0\", so the keyboard follows "
+"the page instead of jumping."
+msgstr ""
+
+#: includes/fixes.php:92
+msgid ""
+"The element stays focusable — it just stops queue-jumping the whole page."
+msgstr ""
+
+#: includes/fixes.php:231
+msgid "Skip to content"
+msgstr ""
+
+#: includes/fixes.php:439 includes/fixes.php:440 includes/fixes.php:441
+msgid "YouTube video"
+msgstr ""
+
+#: includes/fixes.php:442
+msgid "Vimeo video"
+msgstr ""
+
+#: includes/fixes.php:443 includes/fixes.php:444
+msgid "Google Maps map"
+msgstr ""
+
+#: includes/fixes.php:445
+msgid "OpenStreetMap map"
+msgstr ""
+
+#: includes/fixes.php:446
+msgid "Spotify player"
+msgstr ""
+
+#: includes/fixes.php:447
+msgid "SoundCloud player"
+msgstr ""
+
+#: includes/fixes.php:448
+msgid "Facebook post"
+msgstr ""
+
+#: includes/fixes.php:449
+msgid "Instagram post"
+msgstr ""
+
+#: includes/fixes.php:450
+msgid "Dailymotion video"
+msgstr ""
+
+#: includes/fixes.php:502
+msgid "Search"
+msgstr ""
+
+#: includes/fixes.php:536
+msgid "Comment"
+msgstr ""
+
+#: includes/live.php:166
+msgid "Measuring contrast, focus and target sizes…"
+msgstr ""
+
+#: includes/live.php:167
+msgid "Done. The results are on the report."
+msgstr ""
+
+#: includes/live.php:168
+msgid "The results could not be saved. Reload the page to try again."
+msgstr ""
+
+#: includes/live.php:170
+msgid "Lynbro Accessibility — live check"
+msgstr ""
+
+#: includes/live.php:171
+msgid "Close"
+msgstr ""
+
+#: includes/live.php:238
+msgid "That is not a URL."
+msgstr ""
+
+#: includes/live.php:246
+msgid "That page is not on this site."
+msgstr ""
+
+#: includes/live.php:251
+msgid "That page could not be recorded."
+msgstr ""
+
+#: includes/live.php:364
+#, php-format
+msgid "%1$s: %2$d on this page, the first %3$d listed. "
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:310
+#: includes/lynbro-core/lynbro-core.php:311
+msgid "Our plugins"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:467
+msgid "Image Optimizer"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:468
+msgid ""
+"Convert to WebP and AVIF, right-size oversized images and lazy-load them — "
+"all on your own server."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:471
+msgid "AI Studio"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:472
+msgid ""
+"Write and illustrate posts with AI on your own OpenAI key — at cost, with no "
+"credits in between."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:475
+msgid "Analytics"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:476
+msgid ""
+"Self-hosted, cookieless analytics with funnels. Visitor data never leaves "
+"your database."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:479
+msgid "Tags"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:480
+msgid ""
+"GA4, Tag Manager, Google Ads, Meta Pixel and more without code — each tag "
+"waits for consent."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:483 includes/rules.php:502
+msgid "Forms"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:484
+msgid ""
+"Forms with entries saved for free and no cap, conditional logic checked "
+"server-side, and signed webhooks."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:487
+msgid "Verify"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:488
+msgid ""
+"Catch mistyped e-mail domains and bad phone numbers, and confirm them with a "
+"one-time code by e-mail or SMS."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:491
+msgid "Cache"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:492
+msgid ""
+"Reliable purging for an nginx FastCGI cache and a Redis object cache, with "
+"every purge verified against the cache itself."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:495
+msgid "Translate"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:496
+msgid ""
+"Run your site in several languages, with machine translation on your own "
+"OpenAI key — nothing metered, nothing sold by the word."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:499
+msgid "Shield"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:500
+msgid ""
+"Security headers, HTTPS with HSTS, a small firewall against injection probes "
+"and the hardening switches every site needs."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:503
+msgid "Anti-Spam"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:504
+msgid ""
+"Spam checks that run on your own server. No account, no subscription, every "
+"block says why — and a held message is never lost."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:507
+msgid "Login Guard"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:508
+msgid ""
+"Move wp-login.php, limit failed sign-ins and add app-based two-factor — with "
+"three ways back in."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:511
+msgid "Cookie Consent"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:512
+msgid ""
+"A GDPR and ePrivacy banner with Consent Mode v2, an equally prominent Reject "
+"button and 35 languages."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:515
+msgid "Activity Log"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:516
+msgid ""
+"Who did what, when and from where — written down on your own server, "
+"searchable, exportable, and deleted on your schedule."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:519
+msgid "Data Retention"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:520
+msgid ""
+"Find where personal data actually sits in your database, then delete it on a "
+"schedule — with a dry run before every deletion."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:524
+msgid ""
+"Scan every page against WCAG 2.2 AA and fix what can be fixed safely. No "
+"overlay, no page limit."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:527
+msgid "SEO"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:528
+msgid ""
+"Lean SEO with free LocalBusiness schema, sitemaps and social cards. Nothing "
+"phones home."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:531
+msgid "SMTP Mailer"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:532
+msgid ""
+"WordPress email through your own SMTP server — with an email log, resend, a "
+"backup connection and failure alerts."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:535
+msgid "Social Feed"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:536
+msgid ""
+"An Instagram feed on your site without a Meta token stored in WordPress."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:539
+msgid "Reviews Cache"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:540
+msgid "Show your Google reviews without putting an API key in WordPress."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:543
+msgid "Links"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:544
+msgid ""
+"Find broken links and manage redirects on your own server, with the reason "
+"for every verdict."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:547
+msgid "Danadresse Autofill"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:548
+msgid ""
+"Danish address autocomplete and validation for WooCommerce, WPForms, "
+"Gravity, Fluent, Formidable and EDD."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:551
+msgid "Soge Lookup"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:552
+msgid ""
+"Look up Danish vehicles (DMR) and companies (CVR) by plate, VIN or CVR "
+"number."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:555
+msgid "CVR Checkout"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:556
+msgid ""
+"Danish B2B checkout for WooCommerce: CVR company autofill, CVR/EU-VAT (VIES) "
+"validation and an EAN/GLN field."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:559
+msgid "Danish Shipping"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:560
+msgid ""
+"Free pickup point selection for PostNord and GLS Denmark at the WooCommerce "
+"checkout, plus clean shipping methods."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:563
+msgid "API Auth"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:564
+msgid ""
+"JSON Web Tokens for the REST API that you can actually revoke, with scopes "
+"and a journal of refusals."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:775
+msgid "Lynbro plugins"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:776
+msgid ""
+"Generous, privacy-first WordPress plugins — built in Denmark. Free cores, no "
+"credits, your data stays on your site."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:783
+msgid "More from Lynbro"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:784
+msgid ""
+"The rest of the suite. What is already on this site is marked; nothing "
+"installs without you asking for it."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:808
+msgid "Active"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:810
+msgid "Installed"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:812
+msgid "On WordPress.org"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:814
+msgid "Coming soon"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:821
+msgid "Activate"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:823
+#: includes/lynbro-core/lynbro-core.php:1447
+msgid "Install now"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:826
+#: includes/lynbro-core/lynbro-core.php:1451
+msgid "View on WordPress.org"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:828
+#: includes/lynbro-core/lynbro-core.php:1453
+msgid "Learn more"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:837
+msgid "About Lynbro"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:838
+msgid ""
+"Lynbro builds genuinely free, privacy-first WordPress plugins with generous "
+"free cores — no credits, no paywalls on the essentials, your data on your "
+"own site. Made in Denmark."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:840
+msgid "Visit Lynbro"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:841
+msgid "Suggest a feature or report a bug"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:843
+msgid ""
+"Feedback opens our public roadmap on plugins.lynbro.dk in a new tab — "
+"nothing is sent from your site."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:869
+#, php-format
+msgid ""
+"Shared Lynbro components v%1$s, provided by %2$s (newest of %3$d versions on "
+"this site)."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1334
+#, php-format
+msgid "Is %s doing its job?"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1338
+msgid ""
+"You have used it for a couple of weeks now. If it works for you, a short "
+"review on WordPress.org helps other site owners find it — honest ones, "
+"critical ones included."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1340
+msgid ""
+"You have used it for a couple of weeks now. If it works for you — or if "
+"something is missing — tell us on our public roadmap. That is how we decide "
+"what to build next."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1345
+msgid "Write a review"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1345
+#: includes/lynbro-core/lynbro-core.php:1347
+#: includes/lynbro-core/lynbro-core.php:1353
+#: includes/lynbro-core/lynbro-core.php:1451
+#: includes/lynbro-core/lynbro-core.php:1453
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1347
+msgid "Share feedback"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1349
+msgid "Maybe later"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1350
+msgid "Don't ask again"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1353
+msgid "Something not working? Ask for help"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1407
+msgid "WooCommerce is active"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1408
+msgid "a form plugin is active"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1409
+msgid "the site is set up for Denmark"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1410
+msgid "comments are open"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1411
+msgid "tracking tags are active"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1412
+msgid "visitors can create accounts"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1421
+msgid "Suggested because %l."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1475
+#: includes/lynbro-core/lynbro-core.php:1506
+msgid "Suggested for this site"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1476
+msgid "Hide suggestions"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1478
+msgid ""
+"Other Lynbro plugins that fit what this site uses. Nothing is installed "
+"unless you click."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1479
+msgid "All Lynbro plugins"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1507
+msgid ""
+"Picked from what this site already uses — read on this site, nothing is sent "
+"anywhere."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1626
+msgid "Tools"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1627
+msgid ""
+"Export this plugin&#8217;s settings as a JSON backup, or reset them to "
+"defaults. 100% local — nothing leaves your site."
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1633
+msgid "Export settings (JSON)"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1635
+msgid "Reset all settings to defaults?"
+msgstr ""
+
+#: includes/lynbro-core/lynbro-core.php:1639
+msgid "Reset to defaults"
+msgstr ""
+
+#: includes/manual.php:39
+msgid "Videos have captions, and the captions are right"
+msgstr ""
+
+#: includes/manual.php:40
+msgid ""
+"Open each video and read the captions along with the audio. Automatic "
+"captions are usually wrong about names, prices and Danish place names — "
+"which is exactly the part that matters."
+msgstr ""
+
+#: includes/manual.php:45
+msgid "Anything shown but not said in a video is described"
+msgstr ""
+
+#: includes/manual.php:46
+msgid ""
+"Listen to the video without looking at it. If something important only "
+"appears on screen — a phone number, a form being filled in — it needs "
+"describing."
+msgstr ""
+
+#: includes/manual.php:51
+msgid "The reading order matches the visual order"
+msgstr ""
+
+#: includes/manual.php:52
+msgid ""
+"Turn off the site stylesheet, or read the page in reader mode. If the "
+"sidebar arrives in the middle of an article, the source order is wrong."
+msgstr ""
+
+#: includes/manual.php:57
+msgid "Text is text, not a picture of text"
+msgstr ""
+
+#: includes/manual.php:58
+msgid ""
+"Look for banners, price lists and opening hours saved as images. They do not "
+"enlarge, do not translate and cannot be read aloud."
+msgstr ""
+
+#: includes/manual.php:63
+msgid "The page works at 320 pixels wide and at 400% zoom"
+msgstr ""
+
+#: includes/manual.php:64
+msgid ""
+"Zoom the browser to 400% on a desktop. Nothing should need to be scrolled "
+"sideways to be read."
+msgstr ""
+
+#: includes/manual.php:69
+msgid ""
+"Tooltips and dropdowns can be dismissed and stay open long enough to use"
+msgstr ""
+
+#: includes/manual.php:70
+msgid ""
+"Hover over a menu that opens a submenu. Escape should close it, and moving "
+"the mouse onto the submenu should not make it vanish."
+msgstr ""
+
+#: includes/manual.php:75
+msgid "The keyboard can always get out again"
+msgstr ""
+
+#: includes/manual.php:76
+msgid ""
+"Tab through the whole page, including any pop-up, cookie banner or chat "
+"widget. If focus goes into something it cannot leave, that page is unusable "
+"without a mouse."
+msgstr ""
+
+#: includes/manual.php:81
+msgid "Nothing flashes more than three times a second"
+msgstr ""
+
+#: includes/manual.php:82
+msgid ""
+"Check animated banners and video intros. This one is a seizure risk, not an "
+"inconvenience."
+msgstr ""
+
+#: includes/manual.php:87
+msgid "Any time limit can be turned off or extended"
+msgstr ""
+
+#: includes/manual.php:88
+msgid ""
+"Booking steps, checkout sessions and carousels that advance on their own all "
+"count."
+msgstr ""
+
+#: includes/manual.php:93
+msgid "Headings and labels actually describe what follows"
+msgstr ""
+
+#: includes/manual.php:94
+msgid ""
+"Read only the headings. They should work as a summary of the page on their "
+"own."
+msgstr ""
+
+#: includes/manual.php:99
+msgid "The focused element is never hidden behind something else"
+msgstr ""
+
+#: includes/manual.php:100
+msgid ""
+"New in WCAG 2.2. Tab down a long page with a sticky header: the focused link "
+"must not disappear underneath it."
+msgstr ""
+
+#: includes/manual.php:105
+msgid "Nothing can only be done by dragging"
+msgstr ""
+
+#: includes/manual.php:106
+msgid ""
+"New in WCAG 2.2. Sliders, sortable lists and map controls need a way that is "
+"a single tap or click instead."
+msgstr ""
+
+#: includes/manual.php:111
+msgid "Navigation is in the same place on every page"
+msgstr ""
+
+#: includes/manual.php:112
+msgid ""
+"Compare the front page, a product page and the contact page. The menu should "
+"not move or change order."
+msgstr ""
+
+#: includes/manual.php:117
+msgid "Help is in the same place on every page that has it"
+msgstr ""
+
+#: includes/manual.php:118
+msgid ""
+"New in WCAG 2.2. If the phone number, chat or contact link is in the footer "
+"on one page, it belongs in the footer on all of them."
+msgstr ""
+
+#: includes/manual.php:123
+msgid "Form errors say, in words, what is wrong"
+msgstr ""
+
+#: includes/manual.php:124
+msgid ""
+"Submit your contact form empty. A red border is not an error message: the "
+"text has to name the field and the problem."
+msgstr ""
+
+#: includes/manual.php:129
+msgid "Form errors say how to put it right"
+msgstr ""
+
+#: includes/manual.php:130
+msgid ""
+"Type an invalid postcode. \"Invalid\" is not enough — \"A Danish postcode is "
+"four digits\" is."
+msgstr ""
+
+#: includes/manual.php:135
+msgid "Nothing has to be typed in twice"
+msgstr ""
+
+#: includes/manual.php:136
+msgid ""
+"New in WCAG 2.2. If a checkout asks for the delivery address and then the "
+"billing address, there must be a way to copy it rather than retype it."
+msgstr ""
+
+#: includes/manual.php:141
+msgid "Logging in does not require solving a puzzle from memory"
+msgstr ""
+
+#: includes/manual.php:142
+msgid ""
+"New in WCAG 2.2. A password field must allow pasting, and a CAPTCHA that "
+"asks people to recognise objects or transcribe text fails this outright."
+msgstr ""
+
+#: includes/manual.php:244
+msgid "Checked, fine"
+msgstr ""
+
+#: includes/manual.php:246
+msgid "Checked, a problem"
+msgstr ""
+
+#: includes/manual.php:248
+msgid "Does not apply here"
+msgstr ""
+
+#: includes/manual.php:250
+msgid "Not looked at yet"
+msgstr ""
+
+#: includes/queue.php:94
+msgid ""
+"PHP on this server has no DOM extension, so pages cannot be parsed. Ask your "
+"host to enable ext-dom."
+msgstr ""
+
+#: includes/queue.php:137
+msgid "Another scan tick is still running."
+msgstr ""
+
+#: includes/queue.php:169
+msgid ""
+"Paused: this tick was close to the PHP memory limit. The scan continues on "
+"the next tick."
+msgstr ""
+
+#: includes/queue.php:188
+msgid "Stopped. Starting again picks up from the beginning."
+msgstr ""
+
+#: includes/rules.php:50
+msgid "The page has no title"
+msgstr ""
+
+#: includes/rules.php:51
+msgid ""
+"The title is the first thing a screen reader announces and the only thing "
+"that distinguishes one open tab from another. Without it people navigate by "
+"guesswork."
+msgstr ""
+
+#: includes/rules.php:52
+msgid ""
+"Give the page a title. In WordPress that normally means the post or page "
+"needs a name, or the theme is not printing wp_head()."
+msgstr ""
+
+#: includes/rules.php:59
+msgid "The page does not say what language it is in"
+msgstr ""
+
+#: includes/rules.php:60
+msgid ""
+"A screen reader picks its pronunciation from the language attribute. Danish "
+"text read aloud with English pronunciation is close to unusable."
+msgstr ""
+
+#: includes/rules.php:61
+msgid ""
+"The <html> element needs a lang attribute. Themes get this from "
+"language_attributes(); if yours hard-codes the tag, the fix on the Fixes "
+"screen can set it for you."
+msgstr ""
+
+#: includes/rules.php:68
+msgid "Zoom is switched off on phones"
+msgstr ""
+
+#: includes/rules.php:69
+msgid ""
+"user-scalable=no and a maximum-scale below 2 stop someone with low vision "
+"from pinching to enlarge the text. On a phone that is the difference between "
+"reading the page and leaving it."
+msgstr ""
+
+#: includes/rules.php:70
+msgid ""
+"Remove user-scalable=no and any maximum-scale below 2 from the viewport meta "
+"tag, or switch on the fix that strips them."
+msgstr ""
+
+#: includes/rules.php:77
+msgid "The page has no main region"
+msgstr ""
+
+#: includes/rules.php:78
+msgid ""
+"Screen reader users jump straight to the main content instead of listening "
+"to the menu on every page. With no <main> there is nothing to jump to."
+msgstr ""
+
+#: includes/rules.php:79
+msgid ""
+"Wrap the content area of the theme template in <main> (or add role=\"main\" "
+"to the element that already holds it)."
+msgstr ""
+
+#: includes/rules.php:86
+msgid "There is no skip link"
+msgstr ""
+
+#: includes/rules.php:87
+msgid ""
+"Someone using only a keyboard has to tab through the whole menu on every "
+"single page before reaching the content. A skip link makes that one "
+"keystroke."
+msgstr ""
+
+#: includes/rules.php:88
+msgid ""
+"Add a link to the main content as the first focusable element on the page, "
+"or switch on the skip link fix."
+msgstr ""
+
+#: includes/rules.php:97
+msgid "The page has no first-level heading"
+msgstr ""
+
+#: includes/rules.php:98
+msgid ""
+"The h1 is what tells a screen reader user what this page is, in one line, "
+"before anything else."
+msgstr ""
+
+#: includes/rules.php:99
+msgid "Give the page one h1 — usually the page title in the theme template."
+msgstr ""
+
+#: includes/rules.php:106
+msgid "The page has more than one first-level heading"
+msgstr ""
+
+#: includes/rules.php:107
+msgid ""
+"More than one h1 means the page claims to be about several things at once, "
+"and the outline people navigate by stops making sense."
+msgstr ""
+
+#: includes/rules.php:108
+msgid ""
+"Keep one h1 and demote the others to h2. Page builders often set a section "
+"title to h1 by accident."
+msgstr ""
+
+#: includes/rules.php:115
+msgid "A heading level was skipped"
+msgstr ""
+
+#: includes/rules.php:116
+msgid ""
+"Heading levels are the table of contents a screen reader reads out. Jumping "
+"from h2 to h4 suggests a missing section, and people lose their place."
+msgstr ""
+
+#: includes/rules.php:117
+msgid ""
+"Change the heading to the next level down from the one above it. Headings "
+"mark structure, not size — use CSS for size."
+msgstr ""
+
+#: includes/rules.php:124
+msgid "A heading is empty"
+msgstr ""
+
+#: includes/rules.php:125
+msgid ""
+"An empty heading is announced as a heading with nothing in it — a signpost "
+"pointing at nothing."
+msgstr ""
+
+#: includes/rules.php:126
+msgid ""
+"Give the heading text, or remove it. Empty headings are usually left behind "
+"by a page builder used for spacing."
+msgstr ""
+
+#: includes/rules.php:135
+msgid "An image has no alt attribute"
+msgstr ""
+
+#: includes/rules.php:136
+msgid ""
+"With no alt attribute a screen reader falls back to reading the file name "
+"aloud. \"IMG underscore four seven two dot jpeg\" is what your customer "
+"hears."
+msgstr ""
+
+#: includes/rules.php:137
+msgid ""
+"Add alt text describing what the image does on this page. If it is purely "
+"decorative, alt=\"\" is correct — but the attribute must still be there."
+msgstr ""
+
+#: includes/rules.php:144
+msgid "The alt text says nothing useful"
+msgstr ""
+
+#: includes/rules.php:145
+msgid ""
+"Alt text like \"image\", \"photo\", \"billede\" or the file name carries no "
+"information. It passes an automated check and tells a blind visitor nothing."
+msgstr ""
+
+#: includes/rules.php:146
+msgid ""
+"Describe what the image shows or what it is for. If it adds nothing, mark it "
+"decorative with alt=\"\"."
+msgstr ""
+
+#: includes/rules.php:153
+msgid "The alt text is very long"
+msgstr ""
+
+#: includes/rules.php:154
+msgid ""
+"Alt text is read out in one uninterrupted breath. Past roughly 150 "
+"characters people stop being able to hold it."
+msgstr ""
+
+#: includes/rules.php:155
+msgid ""
+"Shorten the alt text to the essentials and put the detail in the page text "
+"or a caption, where everyone can read it."
+msgstr ""
+
+#: includes/rules.php:162
+msgid "A link contains only an image with no alt text"
+msgstr ""
+
+#: includes/rules.php:163
+msgid ""
+"The image is the only thing in the link, so its alt text is the link text. "
+"Empty, and the link is announced as \"link\" with no destination."
+msgstr ""
+
+#: includes/rules.php:164
+msgid ""
+"Give the image alt text that says where the link goes — not what the picture "
+"looks like."
+msgstr ""
+
+#: includes/rules.php:171
+msgid "An image button has no alt text"
+msgstr ""
+
+#: includes/rules.php:172
+msgid ""
+"An <input type=\"image\"> is a button. Without alt text nobody using a "
+"screen reader knows what pressing it does."
+msgstr ""
+
+#: includes/rules.php:173
+msgid "Add an alt attribute describing the action, for example alt=\"Search\"."
+msgstr ""
+
+#: includes/rules.php:180
+msgid "An inline SVG has no accessible name"
+msgstr ""
+
+#: includes/rules.php:181
+msgid ""
+"An SVG with no title and no label is either announced as nothing or, in some "
+"browsers, as a meaningless \"graphic\"."
+msgstr ""
+
+#: includes/rules.php:182
+msgid ""
+"Add aria-hidden=\"true\" if the icon is decorative and sits next to text; "
+"otherwise give it role=\"img\" and an aria-label."
+msgstr ""
+
+#: includes/rules.php:189
+msgid "An image map region has no alt text"
+msgstr ""
+
+#: includes/rules.php:190
+msgid ""
+"Each clickable region of an image map is a link. Without alt text the whole "
+"map is unusable without sight."
+msgstr ""
+
+#: includes/rules.php:191
+msgid "Give every <area> an alt attribute describing where it leads."
+msgstr ""
+
+#: includes/rules.php:200
+msgid "A link has no text"
+msgstr ""
+
+#: includes/rules.php:201
+msgid ""
+"Screen reader users list the links on a page to navigate it. A link with no "
+"text appears in that list as a blank line."
+msgstr ""
+
+#: includes/rules.php:202
+msgid ""
+"Put text in the link, or give it an aria-label. Icon-only links need a label "
+"even when the icon is obvious to sighted people."
+msgstr ""
+
+#: includes/rules.php:209
+msgid "The link text does not say where it goes"
+msgstr ""
+
+#: includes/rules.php:210
+msgid ""
+"Out of context — and a link list is exactly that — \"read more\", \"click "
+"here\" and \"læs mere\" all lead nowhere in particular."
+msgstr ""
+
+#: includes/rules.php:211
+msgid ""
+"Name the destination in the link: \"Read more about opening hours\". Same "
+"length, actually useful."
+msgstr ""
+
+#: includes/rules.php:218
+msgid "The link text is a raw address"
+msgstr ""
+
+#: includes/rules.php:219
+msgid ""
+"A screen reader reads a bare URL character by character. Nobody listens to "
+"that to the end."
+msgstr ""
+
+#: includes/rules.php:220
+msgid ""
+"Replace the address with what it leads to: \"Our price list\" instead of "
+"https://…/prices-2026-final.pdf."
+msgstr ""
+
+#: includes/rules.php:232
+msgid "A link opens a new window without warning"
+msgstr ""
+
+#: includes/rules.php:233
+msgid ""
+"A new tab moves the keyboard focus somewhere else and breaks the back "
+"button. Sighted people notice; screen reader users often do not. This is a "
+"level AAA criterion, so it is not required for the AA conformance the "
+"European Accessibility Act works to — it is here because it is cheap to fix "
+"and people notice."
+msgstr ""
+
+#: includes/rules.php:234
+msgid ""
+"Say so in the link text, or switch on the fix that appends \"(opens in a new "
+"window)\" for screen readers."
+msgstr ""
+
+#: includes/rules.php:245
+msgid "A link leads to a document that needs its own check"
+msgstr ""
+
+#: includes/rules.php:246
+msgid ""
+"A PDF or Office file linked from the page is part of its content, and the "
+"same rules apply to it. Scanned or untagged PDFs have no headings, no "
+"reading order and no text a screen reader can find."
+msgstr ""
+
+#: includes/rules.php:247
+msgid ""
+"Open the document and check that it has real text, headings and a title (in "
+"Acrobat: Accessibility check; in Word: Check Accessibility before saving as "
+"PDF). Where the information fits on a web page, put it there instead."
+msgstr ""
+
+#: includes/rules.php:254
+msgid "A button has no accessible name"
+msgstr ""
+
+#: includes/rules.php:255
+msgid ""
+"A button announced only as \"button\" gives no reason to press it — and it "
+"is usually the one that submits the form."
+msgstr ""
+
+#: includes/rules.php:256
+msgid ""
+"Put text in the button, or give it an aria-label. For <input "
+"type=\"submit\"> use the value attribute."
+msgstr ""
+
+#: includes/rules.php:263
+msgid "An <a> element is used as a control but cannot be reached by keyboard"
+msgstr ""
+
+#: includes/rules.php:264
+msgid ""
+"Without href an anchor is not focusable. Anyone who cannot use a mouse "
+"cannot reach it at all."
+msgstr ""
+
+#: includes/rules.php:265
+msgid ""
+"Use a <button> for something that acts on the page, and keep <a href> for "
+"going somewhere."
+msgstr ""
+
+#: includes/rules.php:274
+msgid "A form field has no label"
+msgstr ""
+
+#: includes/rules.php:275
+msgid ""
+"An unlabelled field is announced as \"edit text, blank\". This is the single "
+"most common reason a contact form never gets filled in."
+msgstr ""
+
+#: includes/rules.php:276
+msgid ""
+"Add a <label for=\"…\"> pointing at the field id, or give the field an aria-"
+"label."
+msgstr ""
+
+#: includes/rules.php:283
+msgid "A field uses its placeholder instead of a label"
+msgstr ""
+
+#: includes/rules.php:284
+msgid ""
+"The placeholder disappears the moment someone starts typing, so anyone who "
+"is interrupted has lost the question. It is also usually too faint to read."
+msgstr ""
+
+#: includes/rules.php:285
+msgid ""
+"Add a real label. Keep the placeholder for an example of the format, not for "
+"the question itself."
+msgstr ""
+
+#: includes/rules.php:292
+msgid "A label points at a field that does not exist"
+msgstr ""
+
+#: includes/rules.php:293
+msgid ""
+"The label looks right on screen and is connected to nothing. Clicking it "
+"does not focus the field, and screen readers do not pair them."
+msgstr ""
+
+#: includes/rules.php:294
+msgid "Make the label's for attribute match the id of its field exactly."
+msgstr ""
+
+#: includes/rules.php:301
+msgid "A field asking for personal details has no autocomplete"
+msgstr ""
+
+#: includes/rules.php:302
+msgid ""
+"autocomplete lets the browser fill in a name, e-mail or phone number. For "
+"someone with a motor impairment that is the difference between a form they "
+"can complete and one they cannot."
+msgstr ""
+
+#: includes/rules.php:303
+msgid ""
+"Add the matching autocomplete value, for example autocomplete=\"email\", "
+"\"name\" or \"tel\"."
+msgstr ""
+
+#: includes/rules.php:310
+msgid "The same id is used more than once"
+msgstr ""
+
+#: includes/rules.php:311
+msgid ""
+"Labels, aria-labelledby and skip links all find their target by id. With "
+"duplicates only the first one is ever found."
+msgstr ""
+
+#: includes/rules.php:312
+msgid ""
+"Make every id on the page unique. Duplicated ids usually come from the same "
+"block or widget being placed twice."
+msgstr ""
+
+#: includes/rules.php:321
+msgid "A data table has no header cells"
+msgstr ""
+
+#: includes/rules.php:322
+msgid ""
+"Header cells are what let a screen reader say \"Price: 249 kroner\" instead "
+"of reading a wall of loose numbers."
+msgstr ""
+
+#: includes/rules.php:323
+msgid ""
+"Mark the header row with <th> cells and give each one scope=\"col\" or "
+"scope=\"row\"."
+msgstr ""
+
+#: includes/rules.php:330
+msgid "A table header cell is empty"
+msgstr ""
+
+#: includes/rules.php:331
+msgid ""
+"Every cell in that column will be announced with nothing in front of it, "
+"which is the same as having no header at all."
+msgstr ""
+
+#: includes/rules.php:332
+msgid ""
+"Give the header cell text. If the column genuinely has no name, say what it "
+"holds — \"Action\", for example."
+msgstr ""
+
+#: includes/rules.php:341
+msgid "An embedded frame has no title"
+msgstr ""
+
+#: includes/rules.php:342
+msgid ""
+"Frames appear in a screen reader's list of page regions. With no title the "
+"entry reads \"frame\", and there is no way to tell the map from the video."
+msgstr ""
+
+#: includes/rules.php:343
+msgid ""
+"Add a title attribute saying what is inside, for example title=\"Map of our "
+"office\". The Fixes screen can do this for common embeds."
+msgstr ""
+
+#: includes/rules.php:350
+msgid "A video may have no captions"
+msgstr ""
+
+#: includes/rules.php:351
+msgid ""
+"Without captions the video is silent for a deaf visitor. This is also the "
+"criterion the Danish authority is most likely to ask about first."
+msgstr ""
+
+#: includes/rules.php:352
+msgid ""
+"Add a <track kind=\"captions\"> to the video, or captions in the platform "
+"you host it on. Only you can confirm the captions are correct — automatic "
+"ones usually are not."
+msgstr ""
+
+#: includes/rules.php:359
+msgid "Audio on this page needs a transcript"
+msgstr ""
+
+#: includes/rules.php:360
+msgid ""
+"Spoken audio with no written version excludes anyone who cannot hear it — "
+"and anyone in an open-plan office."
+msgstr ""
+
+#: includes/rules.php:361
+msgid ""
+"Publish a transcript on the same page and link to it next to the player."
+msgstr ""
+
+#: includes/rules.php:370
+msgid "An ARIA reference points at nothing"
+msgstr ""
+
+#: includes/rules.php:371
+msgid ""
+"aria-labelledby and aria-describedby name an element by id. When that id is "
+"not on the page the name is silently dropped, and the element goes back to "
+"having no name."
+msgstr ""
+
+#: includes/rules.php:372
+msgid "Correct the id, or remove the attribute and label the element directly."
+msgstr ""
+
+#: includes/rules.php:379
+msgid "Something hidden from screen readers can still be reached by keyboard"
+msgstr ""
+
+#: includes/rules.php:380
+msgid ""
+"aria-hidden=\"true\" around a link or button creates a focus stop that is "
+"announced as nothing. The keyboard user simply disappears into silence."
+msgstr ""
+
+#: includes/rules.php:381
+msgid ""
+"Either remove aria-hidden, or take the element out of the tab order as well."
+msgstr ""
+
+#: includes/rules.php:388
+msgid "An element has a role that does not exist"
+msgstr ""
+
+#: includes/rules.php:389
+msgid ""
+"An unrecognised role is ignored, so the element is announced as whatever it "
+"was before — usually a plain box."
+msgstr ""
+
+#: includes/rules.php:390
+msgid ""
+"Use a role from the ARIA specification, or drop the attribute and use the "
+"matching HTML element instead."
+msgstr ""
+
+#: includes/rules.php:397
+msgid "A positive tabindex changes the keyboard order"
+msgstr ""
+
+#: includes/rules.php:398
+msgid ""
+"tabindex=\"1\" and above pull an element to the front of the tab order for "
+"the whole page. The result is a keyboard journey that jumps around the "
+"screen."
+msgstr ""
+
+#: includes/rules.php:399
+msgid ""
+"Use tabindex=\"0\" for something that should be focusable in its normal "
+"place, and put the markup in the order people should meet it."
+msgstr ""
+
+#: includes/rules.php:408
+msgid "Content moves or blinks with no way to stop it"
+msgstr ""
+
+#: includes/rules.php:409
+msgid ""
+"Anything that moves for more than five seconds without a pause control is a "
+"barrier for people with attention or vestibular disorders — and a seizure "
+"risk when it blinks."
+msgstr ""
+
+#: includes/rules.php:410
+msgid ""
+"Remove <blink> and <marquee>. Both were removed from HTML long ago and no "
+"longer belong on a live site."
+msgstr ""
+
+#: includes/rules.php:417
+msgid "Text set in the markup has too little contrast"
+msgstr ""
+
+#: includes/rules.php:418
+msgid ""
+"Below 4.5:1 the text is hard to read for anyone with reduced vision, and "
+"impossible in sunlight on a phone."
+msgstr ""
+
+#: includes/rules.php:419
+msgid ""
+"Darken the text or lighten the background until the ratio is at least 4.5:1 "
+"— or 3:1 for text at 24px, or 19px bold."
+msgstr ""
+
+#: includes/rules.php:428
+msgid "Text has too little contrast against its background"
+msgstr ""
+
+#: includes/rules.php:429
+msgid ""
+"This one is measured with the colours the browser actually painted, "
+"stylesheet and all. Below 4.5:1 a large share of your visitors over fifty "
+"are straining to read it."
+msgstr ""
+
+#: includes/rules.php:430
+msgid ""
+"Adjust the colours in the theme or the block until the ratio reaches 4.5:1 — "
+"3:1 for large text."
+msgstr ""
+
+#: includes/rules.php:437
+msgid "Keyboard focus cannot be seen"
+msgstr ""
+
+#: includes/rules.php:438
+msgid ""
+"Without a visible focus ring a keyboard user cannot tell where they are on "
+"the page. Themes very often remove it on purpose, for looks."
+msgstr ""
+
+#: includes/rules.php:439
+msgid ""
+"Stop removing the browser outline, or switch on the focus outline fix and "
+"pick a colour that suits the design."
+msgstr ""
+
+#: includes/rules.php:446
+msgid "A control is smaller than 24 by 24 pixels"
+msgstr ""
+
+#: includes/rules.php:447
+msgid ""
+"Added at AA in WCAG 2.2. A target below 24 by 24 is hard to hit with a "
+"tremor, a large finger or a stylus — and this is one of the newest criteria, "
+"so it is one the older tools miss."
+msgstr ""
+
+#: includes/rules.php:448
+msgid ""
+"Give the control more padding, or leave at least 24 pixels of clear space "
+"around it."
+msgstr ""
+
+#: includes/rules.php:482
+msgid "Failure"
+msgstr ""
+
+#: includes/rules.php:484
+msgid "Likely failure"
+msgstr ""
+
+#: includes/rules.php:486
+msgid "Needs a person"
+msgstr ""
+
+#: includes/rules.php:498
+msgid "Page structure"
+msgstr ""
+
+#: includes/rules.php:499
+msgid "Headings"
+msgstr ""
+
+#: includes/rules.php:500
+msgid "Images"
+msgstr ""
+
+#: includes/rules.php:501
+msgid "Links and buttons"
+msgstr ""
+
+#: includes/rules.php:503
+msgid "Tables"
+msgstr ""
+
+#: includes/rules.php:504
+msgid "Video and embeds"
+msgstr ""
+
+#: includes/rules.php:505
+msgid "ARIA and keyboard"
+msgstr ""
+
+#: includes/rules.php:506
+msgid "Presentation"
+msgstr ""
+
+#: includes/rules.php:507
+msgid "Measured in the browser"
+msgstr ""
+
+#: includes/scanner.php:77
+msgid ""
+"The page still asks for a password (HTTP 401). Check the username and "
+"password under Settings, “A site behind a password”."
+msgstr ""
+
+#: includes/scanner.php:78
+msgid ""
+"The page asks for a username and password (HTTP 401). If this is a staging "
+"site behind basic auth, enter them under Settings, “A site behind a "
+"password”."
+msgstr ""
+
+#: includes/scanner.php:81
+msgid ""
+"The site answered HTTP 503, which is what maintenance mode sends. Switch "
+"maintenance mode off while you scan, or let requests with the X-Lynbro-"
+"Accessibility header through it."
+msgstr ""
+
+#: includes/scanner.php:84
+#, php-format
+msgid "The page answered with HTTP %d, so there was nothing to check."
+msgstr ""
+
+#: includes/scanner.php:209
+msgid "That is not a URL we can scan."
+msgstr ""
+
+#: includes/scanner.php:213
+msgid ""
+"This server has no DOM extension for PHP, so pages cannot be parsed. Ask "
+"your host to enable ext-dom."
+msgstr ""
+
+#: includes/scanner.php:214
+msgid "PHP has no DOM extension on this server."
+msgstr ""
+
+#: includes/scanner.php:223
+#, php-format
+msgid "The page could not be fetched: %s"
+msgstr ""
+
+#: includes/scanner.php:238
+msgid ""
+"This page is protected with a password, so the scanner only sees the "
+"password form. It was not checked."
+msgstr ""
+
+#: includes/scanner.php:244
+msgid "The page came back empty or could not be parsed as HTML."
+msgstr ""
+
+#: includes/sources.php:53
+msgid "Front page"
+msgstr ""
+
+#: includes/sources.php:120
+#, php-format
+msgid "Archive: %s"
+msgstr ""
+
+#: includes/statement.php:80
+msgid "Denmark: a business that sells to consumers"
+msgstr ""
+
+#: includes/statement.php:81
+msgid ""
+"If you are not satisfied with our answer, you can send a tip to the Danish "
+"Business Authority (Erhvervsstyrelsen), which supervises the accessibility "
+"requirements for products and services in Denmark:"
+msgstr ""
+
+#: includes/statement.php:125
+msgid "Fully meets WCAG 2.2 AA"
+msgstr ""
+
+#: includes/statement.php:126
+msgid "Partially meets WCAG 2.2 AA"
+msgstr ""
+
+#: includes/statement.php:127
+msgid "Does not meet WCAG 2.2 AA yet"
+msgstr ""
+
+#: includes/statement.php:344
+#, php-format
+msgid ""
+"%1$s wants everyone to be able to use %2$s, including people who use a "
+"screen reader, only a keyboard, magnification or other assistive technology. "
+"This statement describes how accessible the website is today and how to tell "
+"us about a problem."
+msgstr ""
+
+#: includes/statement.php:355
+msgid ""
+"The website fully meets WCAG 2.2 level AA, the standard that the European "
+"accessibility requirements (EN 301 549) refer to."
+msgstr ""
+
+#: includes/statement.php:358
+msgid ""
+"The website does not yet meet WCAG 2.2 level AA, the standard that the "
+"European accessibility requirements (EN 301 549) refer to. The main problems "
+"are listed below."
+msgstr ""
+
+#: includes/statement.php:361
+msgid ""
+"The website partially meets WCAG 2.2 level AA, the standard that the "
+"European accessibility requirements (EN 301 549) refer to. The parts that do "
+"not meet it yet are listed below."
+msgstr ""
+
+#: includes/statement.php:372
+#, php-format
+msgid "%1$s (WCAG %2$s), on %3$s page."
+msgid_plural "%1$s (WCAG %2$s), on %3$s pages."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/statement.php:383
+#, php-format
+msgid "Not met yet: %1$s (WCAG %2$s)."
+msgstr ""
+
+#: includes/statement.php:390
+msgid ""
+"Some linked documents (PDF and office files) may not be accessible. Ask us "
+"and we will send the content in a form you can use."
+msgstr ""
+
+#: includes/statement.php:401
+msgid "Content that is not accessible"
+msgstr ""
+
+#: includes/statement.php:411
+msgid "Content outside the scope of the requirements"
+msgstr ""
+
+#: includes/statement.php:417
+msgid "How this statement was prepared"
+msgstr ""
+
+#: includes/statement.php:423
+#, php-format
+msgid "This statement was prepared on %1$s and last reviewed on %2$s."
+msgstr ""
+
+#: includes/statement.php:429
+#, php-format
+msgid "This statement was prepared on %s."
+msgstr ""
+
+#: includes/statement.php:432
+msgid "It is based on our own assessment."
+msgstr ""
+
+#: includes/statement.php:437
+#, php-format
+msgid ""
+"It is based on our own assessment, including an automated check of %1$s "
+"published page on %2$s."
+msgid_plural ""
+"It is based on our own assessment, including an automated check of %1$s "
+"published pages on %2$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/statement.php:449
+#, php-format
+msgid ""
+"A person has also reviewed %1$s of the %2$s requirements that automated "
+"testing cannot check."
+msgstr ""
+
+#: includes/statement.php:457
+msgid "Feedback and contact"
+msgstr ""
+
+#: includes/statement.php:458
+msgid ""
+"If you meet a barrier on the website, or need content in a different format, "
+"please tell us:"
+msgstr ""
+
+#: includes/statement.php:463
+msgid "Email:"
+msgstr ""
+
+#: includes/statement.php:467
+msgid "Phone:"
+msgstr ""
+
+#: includes/statement.php:475
+#, php-format
+msgid "We aim to reply %s."
+msgstr ""
+
+#. Plugin Name of the plugin
+#: lynbro-accessibility-checker.php
+msgid "Lynbro Accessibility Checker"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: lynbro-accessibility-checker.php
+msgid "https://plugins.lynbro.dk/lynbro-accessibility-checker"
+msgstr ""
+
+#. Description of the plugin
+#: lynbro-accessibility-checker.php
+msgid "Scan your whole site against WCAG 2.2 AA, see every problem with the element that causes it and how to fix it, and switch on the fixes that can be made safely. No overlay, no account, no page limit."
+msgstr ""
+
+#. Author of the plugin
+#: lynbro-accessibility-checker.php
+msgid "Lynbro"
+msgstr ""
+
+#. Author URI of the plugin
+#: lynbro-accessibility-checker.php
+msgid "https://lynbro.dk"
+msgstr ""

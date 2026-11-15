@@ -1,0 +1,501 @@
+/*
+ * Our own admin styling.
+ *
+ * This is a plugin that reports accessibility problems, so its own screens are
+ * held to the standard they measure: native WordPress controls, repainted and
+ * spaced, never replaced. Every colour below has been checked against the
+ * surface it sits on, and no state is signalled by colour alone — a severity
+ * badge always carries its word as well as its hue.
+ *
+ * Everything is scoped to .lynbro-a11y so nothing here can leak into another
+ * plugin's screen.
+ */
+
+.lynbro-a11y .lynbro-section {
+	margin: 20px 0;
+	padding: 18px 20px;
+	background: #fff;
+	border: 1px solid #e2ebe6;
+	border-radius: 6px;
+}
+
+.lynbro-a11y .lynbro-section > h2 {
+	margin-top: 0;
+	font-size: 1.15em;
+}
+
+.lynbro-a11y .desc,
+.lynbro-a11y .lynbro-muted {
+	color: #4b5563;   /* 7.6:1 on white — comfortably past AA, because this is the text people actually read. */
+	max-width: 46em;
+}
+
+.lynbro-a11y .lynbro-muted {
+	display: block;
+	font-size: 0.92em;
+}
+
+/* ---- Scan control ---- */
+
+.lynbro-a11y-progress {
+	height: 12px;
+	margin: 10px 0;
+	max-width: 40em;
+	background: #e2ebe6;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.lynbro-a11y-progress .bar {
+	display: block;
+	height: 100%;
+	width: 0;
+	background: #1a7f5a;
+	transition: width 0.3s ease;
+}
+
+/* The bar is decoration; the sentence under it is the real status, and it is
+   what a screen reader announces. */
+#lynbro-a11y-status {
+	font-weight: 600;
+	margin: 6px 0;
+}
+
+/* ---- Figures ---- */
+
+.lynbro-a11y-unchecked {
+	margin: 14px 0 0;
+	padding: 10px 14px;
+	background: #fff8e5;
+	border-left: 4px solid #b45309;
+	color: #1f2937;
+}
+
+.lynbro-a11y-figures {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.lynbro-a11y-figures li {
+	flex: 1 1 12em;
+	margin: 0;
+	padding: 14px 16px;
+	background: #f3f8f5;
+	border: 1px solid #e2ebe6;
+	border-radius: 6px;
+}
+
+.lynbro-a11y-figures .figure {
+	display: block;
+	font-size: 1.9em;
+	font-weight: 700;
+	line-height: 1.1;
+	color: #14532d;
+}
+
+.lynbro-a11y-figures .label {
+	display: block;
+	font-weight: 600;
+}
+
+.lynbro-a11y-figures .note {
+	display: block;
+	font-size: 0.88em;
+	color: #4b5563;
+}
+
+/* ---- Badges ---- */
+
+.lynbro-a11y-badge {
+	display: inline-block;
+	padding: 2px 9px;
+	border-radius: 10px;
+	font-size: 0.85em;
+	font-weight: 600;
+	border: 1px solid transparent;
+	white-space: nowrap;
+}
+
+.lynbro-a11y-badge.is-error {
+	background: #fdecea;
+	border-color: #f0b7b2;
+	color: #8a1c13;   /* 7.2:1 on that background. */
+}
+
+.lynbro-a11y-badge.is-warning {
+	background: #fdf5e2;
+	border-color: #e6cf95;
+	color: #7a5200;   /* 6.4:1. Amber text on amber is where most badge sets fail. */
+}
+
+.lynbro-a11y-badge.is-review {
+	background: #eef2f7;
+	border-color: #c6d0dd;
+	color: #33445c;
+}
+
+/* ---- Tables ---- */
+
+.lynbro-a11y-table {
+	margin-top: 12px;
+}
+
+.lynbro-a11y-table .num {
+	width: 7em;
+	text-align: right;
+}
+
+.lynbro-a11y-table th[scope="row"] {
+	font-weight: 600;
+}
+
+.lynbro-a11y-url {
+	font-size: 0.85em;
+	word-break: break-all;
+}
+
+/* ---- Issue list ---- */
+
+.lynbro-a11y-issues {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.lynbro-a11y-issues > li {
+	margin: 0 0 14px;
+	padding: 14px 16px;
+	background: #fbfcfb;
+	border: 1px solid #e2ebe6;
+	border-left: 4px solid #1a7f5a;
+	border-radius: 4px;
+}
+
+.lynbro-a11y-issues > li.is-ignored {
+	opacity: 0.65;
+	border-left-color: #9aa5b1;
+}
+
+.lynbro-a11y-issues > li > h4 {
+	margin: 0 0 6px;
+	font-size: 1.02em;
+}
+
+.lynbro-a11y-context {
+	margin: 4px 0;
+	font-weight: 600;
+}
+
+.lynbro-a11y-how {
+	margin: 8px 0 6px;
+	max-width: 46em;
+}
+
+.lynbro-a11y-snippet {
+	margin: 8px 0;
+	padding: 8px 10px;
+	max-width: 100%;
+	overflow-x: auto;
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 3px;
+	font-size: 0.85em;
+}
+
+.lynbro-a11y-where code {
+	font-size: 0.85em;
+}
+
+.lynbro-a11y-ignore {
+	margin-top: 6px;
+}
+
+.lynbro-a11y-ignore > summary {
+	cursor: pointer;
+	color: #2271b1;
+	width: fit-content;
+}
+
+.lynbro-a11y-ignore[open] {
+	padding: 8px 10px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 3px;
+}
+
+.lynbro-a11y-ignore .button,
+.lynbro-a11y-rule-hide .button {
+	white-space: normal;
+	height: auto;
+	line-height: 1.4;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-align: start;
+}
+
+.lynbro-a11y-dismissal {
+	margin: 6px 0 2px;
+	font-style: italic;
+	color: #3c434a;
+}
+
+.lynbro-a11y-rule-hide {
+	margin: 12px 0 4px;
+}
+
+/* ---- Fixes ---- */
+
+.lynbro-a11y-fix {
+	margin: 0 0 16px;
+	padding: 14px 16px;
+	border: 1px solid #e2ebe6;
+	border-radius: 5px;
+	background: #fbfcfb;
+}
+
+.lynbro-a11y-fix-toggle {
+	margin: 0 0 6px;
+}
+
+.lynbro-a11y-fix-does,
+.lynbro-a11y-fix-careful {
+	margin: 4px 0;
+	max-width: 46em;
+}
+
+.lynbro-a11y-fix-careful {
+	color: #4b5563;
+}
+
+.lynbro-a11y-fix-setting {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #e9eeec;
+}
+
+.lynbro-a11y-fix-setting label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+/* ---- Manual checks ---- */
+
+.lynbro-a11y-manual-item fieldset {
+	margin: 0;
+}
+
+.lynbro-a11y-manual-item legend {
+	padding: 0;
+	margin-bottom: 6px;
+}
+
+.lynbro-a11y-manual-title {
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+.lynbro-a11y-manual-ask {
+	max-width: 46em;
+	color: #4b5563;
+}
+
+.lynbro-a11y-manual-answers label {
+	display: inline-block;
+	margin-right: 18px;
+}
+
+.lynbro-a11y-manual-item textarea {
+	max-width: 46em;
+}
+
+.lynbro-a11y-manual-item label {
+	font-weight: 500;
+}
+
+/* ---- Misc ---- */
+
+.lynbro-a11y-pager {
+	margin-top: 12px;
+}
+
+.lynbro-a11y-rule-ids {
+	margin: 8px 0 0 1.2em;
+	font-size: 0.92em;
+}
+
+.lynbro-tools-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+}
+
+/* The statement preview reads like the page it becomes: body text width,
+   a quiet frame so it is clearly a sample and not part of the form. */
+.lynbro-a11y-statement-preview {
+	max-width: 46em;
+	padding: 4px 20px 12px;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	background: #fff;
+	color: #1d2327;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.lynbro-a11y-statement-preview ul {
+	margin-left: 1.4em;
+	list-style: disc;
+}
+
+/* The admin colour schemes that are dark repaint the page behind us. Our panels
+   set their own background, so they have to set their own text colour too — a
+   panel that inherits white text onto a white card is the exact failure this
+   plugin reports. */
+@media ( prefers-color-scheme: dark ) {
+	.lynbro-a11y .lynbro-section,
+	.lynbro-a11y .lynbro-a11y-issues > li,
+	.lynbro-a11y .lynbro-a11y-fix {
+		color: #1d2327;
+	}
+}
+
+/* Long button labels (the enforcement wording buttons) wrap instead of widening the form on a phone. */
+.lynbro-a11y .form-table .button {
+	white-space: normal;
+	height: auto;
+	max-width: 100%;
+	text-align: start;
+	line-height: 1.4;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+/* Why a finding does not count: off screen at load, or the phone copy. */
+.lynbro-a11y-offscreen {
+	margin: 8px 0 0;
+	padding: 6px 10px;
+	border-left: 3px solid #8c8f94;
+	background: #f6f7f7;
+	color: #2c3338;
+}
+
+.lynbro-a11y-coverage .button {
+	margin-left: 6px;
+	white-space: normal;
+	height: auto;
+	line-height: 1.4;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.lynbro-a11y-browser-scope fieldset {
+	margin: 8px 0;
+}
+
+.lynbro-a11y-browser-scope legend {
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+#lynbro-a11y-browser-progress {
+	width: 100%;
+	max-width: 480px;
+	height: 18px;
+}
+
+/* The two frames, shown at a quarter of their size. The page inside still lays
+   itself out at 1280 and 390 pixels: scaling the frame does not change the
+   width its media queries see. */
+.lynbro-a11y-frames {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	align-items: flex-start;
+	margin-top: 12px;
+}
+
+.lynbro-a11y-frames figure {
+	margin: 0;
+}
+
+.lynbro-a11y-frames figcaption {
+	font-size: 12px;
+	color: #50575e;
+	margin-top: 4px;
+}
+
+.lynbro-a11y-frame {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #c3c4c7;
+	background: #fff;
+}
+
+.lynbro-a11y-frame--desktop {
+	width: 320px;
+	height: 200px;
+}
+
+.lynbro-a11y-frame--phone {
+	width: 98px;
+	height: 211px;
+}
+
+.lynbro-a11y-frame__page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+	transform: scale( 0.25 );
+	transform-origin: 0 0;
+	pointer-events: none;
+}
+
+.lynbro-a11y-frame__page--desktop {
+	width: 1280px;
+	height: 800px;
+}
+
+.lynbro-a11y-frame__page--phone {
+	width: 390px;
+	height: 844px;
+}
+
+/* WordPress gives .button a display of its own, which beats the hidden
+   attribute; our scripts hide and show things with that attribute. */
+.lynbro-a11y [hidden] {
+	display: none !important;
+}
+
+/* Long button labels wrap instead of pushing the screen sideways on a phone. */
+.lynbro-tools-row .button {
+	white-space: normal;
+	height: auto;
+	line-height: 1.4;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: center;
+}
+
+/* A wide table scrolls inside its own frame on a phone, not the whole screen. */
+.lynbro-a11y-scroll {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+.lynbro-a11y-scroll:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+	.lynbro-a11y-table .num {
+		width: auto;
+	}
+}
