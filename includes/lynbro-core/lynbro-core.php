@@ -22,7 +22,7 @@
 defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'LYNBRO_CORE_VERSION' ) ) {
-	define( 'LYNBRO_CORE_VERSION', '1.1.2' );
+	define( 'LYNBRO_CORE_VERSION', '1.1.3' );
 }
 
 if ( ! function_exists( 'lynbro_core_file_version' ) ) {
@@ -491,9 +491,17 @@ if ( ! function_exists( 'lynbro_core_suite_strings' ) ) {
 				'name'    => __( 'Cache', 'lynbro-accessibility-checker' ),
 				'tagline' => __( 'Reliable purging for an nginx FastCGI cache and a Redis object cache, with every purge verified against the cache itself.', 'lynbro-accessibility-checker' ),
 			),
+			'lynbro-booking' => array(
+				'name'    => __( 'Booking', 'lynbro-accessibility-checker' ),
+				'tagline' => __( 'Appointment booking for one business on your own server: services, staff, schedules, reminders and a one-click move from Amelia.', 'lynbro-accessibility-checker' ),
+			),
 			'lynbro-translate' => array(
 				'name'    => __( 'Translate', 'lynbro-accessibility-checker' ),
 				'tagline' => __( 'Run your site in several languages, with machine translation on your own OpenAI key — nothing metered, nothing sold by the word.', 'lynbro-accessibility-checker' ),
+			),
+			'lynbro-floating-buttons' => array(
+				'name'    => __( 'Contact Buttons', 'lynbro-accessibility-checker' ),
+				'tagline' => __( 'WhatsApp, Messenger, phone and live chat in one fast button — chat scripts load only when a visitor asks.', 'lynbro-accessibility-checker' ),
 			),
 			'lynbro-shield' => array(
 				'name'    => __( 'Shield', 'lynbro-accessibility-checker' ),
@@ -523,6 +531,10 @@ if ( ! function_exists( 'lynbro_core_suite_strings' ) ) {
 				'name'    => __( 'Accessibility', 'lynbro-accessibility-checker' ),
 				'tagline' => __( 'Scan every page against WCAG 2.2 AA and fix what can be fixed safely. No overlay, no page limit.', 'lynbro-accessibility-checker' ),
 			),
+			'lynbro-site-check' => array(
+				'name'    => __( 'Site Check', 'lynbro-accessibility-checker' ),
+				'tagline' => __( 'A free website check for your visitors: HTTPS, headers, cookies before consent, accessibility, SPF/DKIM/DMARC — report on screen.', 'lynbro-accessibility-checker' ),
+			),
 			'lynbro-seo' => array(
 				'name'    => __( 'SEO', 'lynbro-accessibility-checker' ),
 				'tagline' => __( 'Lean SEO with free LocalBusiness schema, sitemaps and social cards. Nothing phones home.', 'lynbro-accessibility-checker' ),
@@ -530,6 +542,10 @@ if ( ! function_exists( 'lynbro_core_suite_strings' ) ) {
 			'lynbro-smtp-mailer' => array(
 				'name'    => __( 'SMTP Mailer', 'lynbro-accessibility-checker' ),
 				'tagline' => __( 'WordPress email through your own SMTP server — with an email log, resend, a backup connection and failure alerts.', 'lynbro-accessibility-checker' ),
+			),
+			'lynbro-newsletter' => array(
+				'name'    => __( 'Newsletter', 'lynbro-accessibility-checker' ),
+				'tagline' => __( 'Self-hosted newsletters with safe sending: consent records, a test after the last edit and approval by typing the exact recipient count.', 'lynbro-accessibility-checker' ),
 			),
 			'lynbro-social-feed' => array(
 				'name'    => __( 'Social Feed', 'lynbro-accessibility-checker' ),

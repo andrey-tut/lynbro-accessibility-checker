@@ -63,11 +63,27 @@
       "wporg": false
     },
     {
+      "slug": "lynbro-booking",
+      "name": "Booking",
+      "icon": "📅",
+      "tagline": "Appointment booking for one business on your own server: services, staff, schedules, reminders and a one-click move from Amelia.",
+      "menu_position": 19,
+      "wporg": false
+    },
+    {
       "slug": "lynbro-translate",
       "name": "Translate",
       "icon": "🌍",
       "tagline": "Run your site in several languages, with machine translation on your own OpenAI key — nothing metered, nothing sold by the word.",
       "menu_position": 20,
+      "wporg": false
+    },
+    {
+      "slug": "lynbro-floating-buttons",
+      "name": "Contact Buttons",
+      "icon": "💬",
+      "tagline": "WhatsApp, Messenger, phone and live chat in one fast button — chat scripts load only when a visitor asks.",
+      "menu_position": 21,
       "wporg": false
     },
     {
@@ -144,6 +160,14 @@
       ]
     },
     {
+      "slug": "lynbro-site-check",
+      "name": "Site Check",
+      "icon": "🔎",
+      "tagline": "A free website check for your visitors: HTTPS, headers, cookies before consent, accessibility, SPF/DKIM/DMARC — report on screen.",
+      "menu_position": 41,
+      "wporg": false
+    },
+    {
       "slug": "lynbro-seo",
       "name": "SEO",
       "icon": "🔎",
@@ -161,6 +185,18 @@
       "fits": [
         "forms",
         "woocommerce"
+      ]
+    },
+    {
+      "slug": "lynbro-newsletter",
+      "name": "Newsletter",
+      "icon": "📨",
+      "tagline": "Self-hosted newsletters with safe sending: consent records, a test after the last edit and approval by typing the exact recipient count.",
+      "menu_position": 53,
+      "wporg": false,
+      "fits": [
+        "woocommerce",
+        "accounts"
       ]
     },
     {

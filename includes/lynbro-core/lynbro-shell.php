@@ -26,7 +26,7 @@
  *   priority 1 version_compare picks the newest and loads only that one.
  *
  * ⚠️ The token lynbro-accessibility-checker below is replaced with the plugin's text domain, and
- * 1.1.2 / 1_1_2 with this shell's version, by
+ * 1.1.3 / 1_1_3 with this shell's version, by
  * tools/sync_lynbro_core.py when the directory is copied into a plugin.
  *
  * @package lynbro-core
@@ -193,7 +193,7 @@ if ( ! function_exists( 'lynbro_core_note_success' ) ) {
 	}
 }
 
-if ( ! function_exists( 'lynbro_core_register_1_1_2' ) ) {
+if ( ! function_exists( 'lynbro_core_register_1_1_3' ) ) {
 
 	/**
 	 * Record a plugin's first success. Listens to lynbro_core_success.
@@ -210,7 +210,7 @@ if ( ! function_exists( 'lynbro_core_register_1_1_2' ) ) {
 	 * @param string $plugin Plugin slug.
 	 * @return void
 	 */
-	function lynbro_core_record_success_1_1_2( $plugin ) {
+	function lynbro_core_record_success_1_1_3( $plugin ) {
 		$plugin = sanitize_key( (string) $plugin );
 		if ( '' === $plugin ) {
 			return;
@@ -225,7 +225,7 @@ if ( ! function_exists( 'lynbro_core_register_1_1_2' ) ) {
 		$usage[ $plugin ] = $row;
 		update_option( 'lynbro_core_usage', $usage, true );
 	}
-	add_action( 'lynbro_core_success', 'lynbro_core_record_success_1_1_2' );
+	add_action( 'lynbro_core_success', 'lynbro_core_record_success_1_1_3' );
 
 	/**
 	 * Announce this copy of the shell.
@@ -235,8 +235,8 @@ if ( ! function_exists( 'lynbro_core_register_1_1_2' ) ) {
 	 *
 	 * @return void
 	 */
-	function lynbro_core_register_1_1_2() {
-		Lynbro_Core_Versions::instance()->register( '1.1.2', __DIR__ . '/lynbro-core.php' );
+	function lynbro_core_register_1_1_3() {
+		Lynbro_Core_Versions::instance()->register( '1.1.3', __DIR__ . '/lynbro-core.php' );
 	}
 
 	if ( did_action( 'plugins_loaded' ) ) {
@@ -245,12 +245,12 @@ if ( ! function_exists( 'lynbro_core_register_1_1_2' ) ) {
 		// election that has already been decided. Loading the shell at file
 		// scope keeps a plugin in the running; that is why every Lynbro plugin
 		// requires it from the top level of its main file.
-		lynbro_core_register_1_1_2();
+		lynbro_core_register_1_1_3();
 		if ( is_admin() ) {
 			Lynbro_Core_Versions::initialize_latest_version();
 		}
 	} else {
-		add_action( 'plugins_loaded', 'lynbro_core_register_1_1_2', 0 );
+		add_action( 'plugins_loaded', 'lynbro_core_register_1_1_3', 0 );
 
 		// Everything the shell provides is a wp-admin screen, and it is carried
 		// by a dozen plugins at once, so a front-end request should not pay for
@@ -262,3 +262,27 @@ if ( ! function_exists( 'lynbro_core_register_1_1_2' ) ) {
 		}
 	}
 }
+
+/*
+ * Bundled translations on EVERY request, for this copy's own plugin.
+ *
+ * The suite-wide lang_dir_for_domain filter lives in the elected lynbro-core.php,
+ * which loads on admin screens only. Plugins that rely on it (and most skip
+ * load_plugin_textdomain()) therefore showed English to visitors on sites that
+ * get no wordpress.org language pack — found by lynbro-forms 0.6.1, 2026-11-17.
+ * This file runs once per vendored copy on every request, so each plugin answers
+ * for its own text domain here. A language pack from translate.wordpress.org still
+ * wins: the filter only answers when WordPress found nothing itself.
+ */
+add_filter(
+	'lang_dir_for_domain',
+	static function ( $path, $domain, $locale ) {
+		if ( ! empty( $path ) || 'lynbro-accessibility-checker' !== $domain ) {
+			return $path;
+		}
+		$dir = dirname( __DIR__, 2 ) . '/languages/';
+		return is_readable( $dir . $domain . '-' . $locale . '.mo' ) ? $dir : $path;
+	},
+	10,
+	3
+);
